@@ -15,6 +15,12 @@ function extract_var(name){
 	return value
 }
 
+function remove_page(){
+	url = window.location.href
+	last_sl = url.lastIndexOf('/')
+	return url.substring(0,last_sl+1)
+}
+
 $(document).ready(function(){
 // week code
 $(".day").hover(function(){
@@ -27,7 +33,7 @@ $(".day").click(function(){
 
 	var grade = extract_var("grade");
 	var day_clicked = $(this).attr('id');
-	window.location.href='teachers.html?grade='+grade+'?day='+day_clicked;
+	window.location.href=remove_page()+'teachers.html?grade='+grade+'?day='+day_clicked;
 });
 
 });

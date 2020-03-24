@@ -10,6 +10,12 @@ function write_teacher(name){
 	return output
 }
 
+function remove_page(){
+	url = window.location.href
+	last_sl = url.lastIndexOf('/')
+	return url.substring(0,last_sl+1)
+}
+
 function extract_var(name){
 	var url = window.location.href
 	var first_q = url.indexOf('html?')
