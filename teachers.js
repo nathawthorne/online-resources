@@ -12,7 +12,7 @@ function write_teacher(name){
 
 function extract_var(name){
 	var url = window.location.href
-	var first_q = url.indexOf('?')
+	var first_q = url.indexOf('html?')
 
 	var all_vars = url.substring(first_q+1, url.length)
 
