@@ -31,7 +31,8 @@ body {
 	position: relative;
 	height:45vh;
 
-	margin-right: 2.5vh;
+	margin-left: 1.25vh;
+	margin-right: 1.25vh;
 	margin-bottom: 2.5vh;
 
 	border-radius: 40px;
@@ -88,4 +89,13 @@ body {
 
 #fri{
 	margin-bottom: 0vh;
+}
+
+/* teachers */
+.teacher {
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: black;
+
+	margin-bottom: 1vh;
 }

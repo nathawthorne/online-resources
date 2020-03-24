@@ -8,19 +8,6 @@ $(document).ready(function(){
 
 	$(".grade").click(function(){
 		grade_clicked = $(this).attr('id');
-		window.location.href='weekday.html';
+		window.location.href='weekday.html?grade='+grade_clicked;
 	});
-
-	// week code
-	$(".day").hover(function(){
-  	$(this).css("opacity", "0.5");
-  }, function(){
-  	$(this).css("opacity", "1");
-	});
-
-	$(".day").click(function(){
-		grade_clicked = $(this).attr('id');
-		window.location.href='teachers.html';
-	});
-
 });
