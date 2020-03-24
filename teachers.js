@@ -6,8 +6,12 @@ let fourth_teachers = ['Dr. Rosi']
 let fifth_teachers = ['El Gordo']
 
 function write_teacher(name){
-	output = "<div class='row'><div class='col-lg-1 col-xs-1'></div><div class='col-lg-10 col-xs-10 teacher' id='"+name+"'><h3>"+name+"</h3></div><div class='col-lg-1 col-xs-1'></div></div>"
+	output = "<div class='row'><div class='col-lg-1 col-xs-1'></div><div class='col-lg-10 col-xs-10 teacher' id='"+string_to_var(name)+"'><h3>"+name+"</h3></div><div class='col-lg-1 col-xs-1'></div></div>"
 	return output
+}
+
+function string_to_var(name){
+	return name.replace(/ /g, "_");
 }
 
 function remove_page(){
@@ -79,4 +83,18 @@ $(document).ready(function(){
 		}
 		$('.teacher_container').html(text);
 	}
+
+
+
+	$(".teacher").hover(function(){
+  	$(this).css("opacity", "0.5");
+  }, function(){
+  	$(this).css("opacity", "1");
+	});
+
+	$(".teacher").click(function(){
+		teacher = $(this).attr('id');
+
+		window.location.href=remove_page()+'work.html?teacher='+teacher;
+	});
 });
