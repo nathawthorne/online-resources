@@ -29,16 +29,8 @@ function setup_page(language){
 }
 
 $(document).ready(function(){
-	var curr_url = window.location.href
-	if(!curr_url.includes('l?lang=')){
-		index_html = curr_url.indexOf('.html') + 5;
-		base = curr_url.substring(0,index_html);
-		vars = curr_url.substring(index_html, curr_url.length);
-		if(vars.startsWith('?lang=')){
-			vars = vars.substring(8,vars.length);
-		}
-		window.location.href=base+'?lang=en'+vars
-	}
+	var curr_url = window.location.href + '?lang=en'
+	window.location.href = curr_url;
 	var lang = extract_var('lang');
 	setup_page(lang);
 
