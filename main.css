@@ -49,6 +49,7 @@ body {
   text-align: center;
 
   text-transform: uppercase;
+  overflow-wrap: break-word;
 }
 .school_name h1{
   font-size: 3vw;
