@@ -58,17 +58,8 @@ body {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
-#K {
-}
-#first {
-}
-#second {
-}
-#third {
-}
-#fourth {
-}
 #fifth {
+	margin-bottom: 0vh;
 }
 
 
@@ -100,4 +91,16 @@ body {
 	padding-bottom: 1vh;
 
 	margin-bottom: 1vh;
+}
+
+/* work */
+.work_container{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  
+  text-align: center;
+  color: black;
+  border-radius: 40px;
+	background-color: rgba(255,255,255,0.8);
+
 }
