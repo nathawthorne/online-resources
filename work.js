@@ -1,7 +1,7 @@
 var teacher_work = {
-Ana_Fernandez:{'teacher_name': 'Ana Fernandez', 'grade': 'K-B', 'work': [['text__Watch the following video for support on the homework!', 'video__head_moving.mp4', 'text__Thanks for watching!']]},
-Miguel_Del_Rio:{'teacher_name': 'Miguel Del Rio', 'grade': 'K-A', 'work': [['text__Alpha Go Documentary', 'link__https://www.youtube.com/watch?v=WXuK6gekU1Y&feature=youtu.be', 'text__Please watch the first 10 minutes of this video. Write your response and send it to me via email: test@gmail.com.'], ['text__No work today!'], ['text__Wednesday! Take a funky pic of your socks!'], ['text__Thursday! Draw Garfield!'], ['text__Friday! Download this file and do the first two problems.', 'download__puebla.pdf']]},
-Narciso_Del_Rio:{'teacher_name': 'Narciso Del Rio', 'grade': 'K-C', 'work': [['text__No work today']]}}
+Ana_Fernandez:{'teacher_name': 'Ana Fernandez', 'grade': 'K-B', 'work': ['text__Watch the following video for support on the homework!', 'video__head_moving.mp4', 'text__Thanks for watching!']},
+Ms_Medrano:{'teacher_name': 'Ms. Medrano', 'grade': 'K-A', 'work': ['text__*Monday*', 'text__Alpha Go Documentary', 'link__https://www.youtube.com/watch?v=WXuK6gekU1Y&feature=youtu.be', 'text__Please watch the first 10 minutes of this video. Write your response and send it to me via email: test@gmail.com.', 'text__', 'text__', 'text__', 'text__*Tuesday*', 'text__No work today!', 'text__', 'text__', 'text__', 'text__*Wednesday*', 'text__Take a funky pic of your socks!', 'text__', 'text__', 'text__', 'text__*Thursday*', 'text__Draw Garfield!', 'text__', 'text__', 'text__', 'text__*Friday*', 'text__Download this file and do the first two problems.', 'download__puebla.pdf']},
+Narciso_Del_Rio:{'teacher_name': 'Narciso Del Rio', 'grade': 'K-C', 'work': ['text__No work today']}}
 
 
 
@@ -12,7 +12,6 @@ special_video = 'video__';
 special_link = 'link__';
 special_download = 'download__'
 
-days_of_week = ['mon', 'tues','wed','thur','fri']
 
 function extract_var(name){
 	var url = window.location.href
@@ -33,6 +32,23 @@ function extract_var(name){
 
 function string_to_var(name){
 	return name.replace(/ /g, "_");
+}
+
+function string_to_html(text){
+	var open = false;
+	replaced_string = "";
+	for (var i = 0; i < text.length; i++) {
+		if(text.charAt(i) == '*' && !open){
+			replaced_string += '<b>';
+			open = true;
+		} else if (text.charAt(i) == '*' && open) {
+			replaced_string += '</b>';
+			open = false;
+		} else{
+			replaced_string += text.charAt(i);
+		}
+	}
+	return replaced_string;
 }
 
 function setup_page(language){
@@ -80,7 +96,7 @@ $(document).ready(function(){
 	});
 	$(".lang").hover(function(){
 		$(this).css("background-color", "white");
-		$(this).css("border-radius", "40px");
+		$(this).css("border-radius", "20px");
 		$(this).css("color", "blue");
   	$(this).css("opacity", "0.7");
 		$(this).css("cursor", "pointer");
@@ -122,24 +138,26 @@ $(document).ready(function(){
 	html_doc = '<h1>'+json_document['teacher_name']+'</h1>'
 	html_doc += '<h1>'+json_document['grade']+'</h1><br>'
 
-	day = extract_var('day');
-	day_index = days_of_week.indexOf(day);
-
-	all_work = json_document['work'][day_index];
+	all_work = json_document['work'];
 	for(var work_id = 0; work_id < all_work.length; work_id++){
 		if(all_work[work_id].startsWith(special_text)){
 			text = all_work[work_id].substring(special_text.length);
 
-			html_doc += '<h3>'+text+'</h3><br>'
+			if(text.length == 0){
+				html_doc += "<br>";
+			}
+			else{
+				html_doc += '<h3>'+string_to_html(text)+'</h3>';
+			}
 		}
 		else if(all_work[work_id].startsWith(special_link)){
 			link = all_work[work_id].substring(special_link.length);
-			html_doc+='<a class="link" href="'+link+'"><h3>Click Here</h3></a><br>'
+			html_doc+='<a class="link" href="'+link+'"><h3>Click Here</h3></a>'
 		}
 		else if(all_work[work_id].startsWith(special_video)){
 			link = all_work[work_id].substring(special_video.length);
 			link = 'teachers/'+var_name+'/'+link
-			html_doc+='<video controls><source src="'+link+'" type="video/mp4">There was an issue loading the video...</video><br>'
+			html_doc+='<video controls><source src="'+link+'" type="video/mp4">There was an issue loading the video...</video>'
 		}
 		else if(all_work[work_id].startsWith(special_download)){
 			link_name = all_work[work_id].substring(special_download.length);

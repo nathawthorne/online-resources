@@ -60,7 +60,7 @@ $(document).ready(function(){
 	});
 	$(".lang").hover(function(){
 		$(this).css("background-color", "white");
-		$(this).css("border-radius", "40px");
+		$(this).css("border-radius", "20px");
 		$(this).css("color", "blue");
   	$(this).css("opacity", "0.7");
 		$(this).css("cursor", "pointer");
@@ -101,6 +101,6 @@ $(document).ready(function(){
 
 		lang = extract_var('lang')
 
-		window.location.href=remove_page('/')+'weekday.html?lang='+lang+'?grade='+grade_clicked;
+		window.location.href=remove_page('/')+'teachers.html?lang='+lang+'?grade='+grade_clicked;
 	});
 });

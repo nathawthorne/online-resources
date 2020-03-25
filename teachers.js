@@ -1,12 +1,24 @@
-let kinder_teachers = ['Miguel Del Rio', 'Narciso Del Rio', 'Ana Fernandez']
-let first_teachers = ['Mauricio Del Rio', 'Michelle Del Rio']
-let second_teachers = ['Dr. Mora']
-let third_teachers = ['Dr. Gemini']
-let fourth_teachers = ['Dr. Rosi']
-let fifth_teachers = ['El Gordo']
+let kinder_teachers = ['Ms Medrano', 'Ms Hernandez', 'Ms Russell']
+let kinder_section = ['KA','KB','KC']
 
-function write_teacher(name){
-	output = "<div class='row'><div class='col-lg-1 col-xs-1'></div><div class='col-lg-10 col-xs-10 teacher' id='"+string_to_var(name)+"'><h3>"+name+"</h3></div><div class='col-lg-1 col-xs-1'></div></div>"
+let first_teachers = ['Ms Neil', 'Ms Escobedo', 'Ms Stewart']
+let first_section = ['1A','1B','1C']
+
+let second_teachers = ['Mr Figueroa', 'Ms Hortelano', 'Ms Nolan']
+let second_section = ['2A','2C','2D']
+
+let third_teachers = ['Ms Vaquerano', 'Ms Gonzalez', 'Mr Galvan']
+let third_section = ['3A','3B','3C']
+
+let fourth_teachers = ['Ms Reyes', 'Mr Vera', 'Ms Veasna']
+let fourth_section = ['4A','4B','4C']
+
+let fifth_teachers = ['Mr Oveido', 'Ms Lopez', 'Ms Lee']
+let fifth_section = ['5A', '5B', '5C']
+
+
+function write_teacher(name, section){
+	output = "<div class='row'><div class='col-lg-1 col-xs-1'></div><div class='col-lg-10 col-xs-10 teacher' id='"+string_to_var(name)+"'><h3>"+section+' -- '+name+"</h3></div><div class='col-lg-1 col-xs-1'></div></div>"
 	return output
 }
 
@@ -82,7 +94,7 @@ $(document).ready(function(){
 	});
 	$(".lang").hover(function(){
 		$(this).css("background-color", "white");
-		$(this).css("border-radius", "40px");
+		$(this).css("border-radius", "20px");
 		$(this).css("color", "blue");
   	$(this).css("opacity", "0.7");
 		$(this).css("cursor", "pointer");
@@ -124,42 +136,42 @@ $(document).ready(function(){
 	if (grade == 'K'){
 		text = ""
 		for (var teacher_id = 0; teacher_id < kinder_teachers.length; teacher_id++) {
-  		text += write_teacher(kinder_teachers[teacher_id]);
+  		text += write_teacher(kinder_teachers[teacher_id], kinder_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);
 	}
 	else if (grade == 'first'){
 		text = ""
 		for (var teacher_id = 0; teacher_id < first_teachers.length; teacher_id++) {
-  		text += write_teacher(first_teachers[teacher_id]);
+  		text += write_teacher(first_teachers[teacher_id], first_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);
 	}
 	else if (grade == 'second'){
 		text = ""
 		for (var teacher_id = 0; teacher_id < second_teachers.length; teacher_id++) {
-  		text += write_teacher(second_teachers[teacher_id]);
+  		text += write_teacher(second_teachers[teacher_id], second_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);
 	}
 	else if (grade == 'third'){
 		text = ""
 		for (var teacher_id = 0; teacher_id < third_teachers.length; teacher_id++) {
-  		text += write_teacher(third_teachers[teacher_id]);
+  		text += write_teacher(third_teachers[teacher_id], third_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);
 	}
 	else if (grade == 'fourth'){
 		text = ""
 		for (var teacher_id = 0; teacher_id < fourth_teachers.length; teacher_id++) {
-  		text += write_teacher(fourth_teachers[teacher_id]);
+  		text += write_teacher(fourth_teachers[teacher_id], fourth_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);
 	}
 	else if (grade == 'fifth'){
 		text = ""
 		for (var teacher_id = 0; teacher_id < fifth_teachers.length; teacher_id++) {
-  		text += write_teacher(fifth_teachers[teacher_id]);
+  		text += write_teacher(fifth_teachers[teacher_id], fifth_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);
 	}
@@ -177,7 +189,6 @@ $(document).ready(function(){
 	$(".teacher").click(function(){
 		teacher = $(this).attr('id');
 		lang = extract_var('lang');
-		day_clicked = extract_var('day')
-		window.location.href=remove_page()+'work.html?lang='+lang+'?teacher='+teacher+'?day='+day_clicked;;
+		window.location.href=remove_page()+'work.html?lang='+lang+'?teacher='+teacher;
 	});
 });

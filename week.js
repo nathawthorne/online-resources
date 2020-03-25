@@ -76,7 +76,7 @@ $(document).ready(function(){
 	});
 	$(".lang").hover(function(){
 		$(this).css("background-color", "white");
-		$(this).css("border-radius", "40px");
+		$(this).css("border-radius", "20px");
 		$(this).css("color", "blue");
   	$(this).css("opacity", "0.7");
 		$(this).css("cursor", "pointer");
