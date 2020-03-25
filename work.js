@@ -36,6 +36,21 @@ function string_to_var(name){
 }
 
 $(document).ready(function(){
+	$(".header").click(function(){
+		grade_clicked = $(this).attr('id');
+
+		window.location.href='https://www.dallasisd.org/hawthorne';
+	});
+	// Grade code
+	$(".header").hover(function(){
+		$(this).css("cursor", "pointer");
+  }, function(){
+		$(this).css("cursor", "auto");
+	});
+
+
+
+
 	teacher_name = extract_var('teacher');
 	var_name = string_to_var(teacher_name);
 	json_document = teacher_work[teacher_name];

@@ -22,10 +22,24 @@ function remove_page(){
 }
 
 $(document).ready(function(){
+	$(".header").click(function(){
+		grade_clicked = $(this).attr('id');
+
+		window.location.href='https://www.dallasisd.org/hawthorne';
+	});
+	// Grade code
+	$(".header").hover(function(){
+		$(this).css("cursor", "pointer");
+  }, function(){
+		$(this).css("cursor", "auto");
+	});
+
 // week code
 $(".day").hover(function(){
+	$(this).css("cursor", "pointer");
 	$(this).css("opacity", "0.5");
 }, function(){
+	$(this).css("cursor", "auto");
 	$(this).css("opacity", "1");
 });
 

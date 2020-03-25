@@ -38,6 +38,18 @@ function extract_var(name){
 }
 
 $(document).ready(function(){
+	$(".header").click(function(){
+		grade_clicked = $(this).attr('id');
+
+		window.location.href='https://www.dallasisd.org/hawthorne';
+	});
+	// Grade code
+	$(".header").hover(function(){
+		$(this).css("cursor", "pointer");
+  }, function(){
+		$(this).css("cursor", "auto");
+	});
+
 	var grade = extract_var('grade');
 	var day = extract_var('day');
 
@@ -87,8 +99,10 @@ $(document).ready(function(){
 
 
 	$(".teacher").hover(function(){
+		$(this).css("cursor", "pointer");
   	$(this).css("opacity", "0.5");
   }, function(){
+		$(this).css("cursor", "auto");
   	$(this).css("opacity", "1");
 	});
 
