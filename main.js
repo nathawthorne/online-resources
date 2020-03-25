@@ -29,8 +29,11 @@ function setup_page(language){
 }
 
 $(document).ready(function(){
-	var curr_url = window.location.href + '?lang=en'
-	window.location.href = curr_url;
+	var curr_url = window.location.href
+	if(!(curr_url.includes('?lang='))){
+		curr_url = window.location.href + '?lang=en';
+		window.location.href = curr_url;
+	}
 	var lang = extract_var('lang');
 	setup_page(lang);
 
