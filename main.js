@@ -78,7 +78,8 @@ $(document).ready(function(){
 			new_lang = 'en';
 		}
 		curr_url = window.location.href
-		base = remove_page('l?lang=')
+		base = remove_page('?lang=')
+		base = base.substring(0,base.length-1)
 		vars = curr_url.substring(base.length,curr_url.length);
 		if(vars.startsWith('?lang=')){
 			vars = vars.substring(8,vars.length);
