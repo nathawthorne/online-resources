@@ -98,9 +98,8 @@ $(document).ready(function(){
 			new_lang = 'en';
 		}
 		curr_url = window.location.href
-		index_html = curr_url.indexOf('.html') + 5;
-		base = curr_url.substring(0,index_html);
-		vars = curr_url.substring(index_html, curr_url.length);
+		base = remove_page('l?lang=')
+		vars = curr_url.substring(base.length,curr_url.length);
 		if(vars.startsWith('?lang=')){
 			vars = vars.substring(8,vars.length);
 		}
