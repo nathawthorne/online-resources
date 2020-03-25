@@ -1,9 +1,9 @@
 {
 	"teacher_name": "Ana Fernandez",
 	"grade": "K-B",
-	"work":[
+	"work":[[
 		"text__Watch the following video for support on the homework!",
 		"video__head_moving.mp4",
-		"text__Thanks for watching!"
+		"text__Thanks for watching!"]
 	]
 }

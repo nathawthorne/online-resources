@@ -94,7 +94,7 @@ $(document).ready(function(){
 
 	$(".teacher").click(function(){
 		teacher = $(this).attr('id');
-
-		window.location.href=remove_page()+'work.html?teacher='+teacher;
+		day_clicked = extract_var('day')
+		window.location.href=remove_page()+'work.html?teacher='+teacher+'?day='+day_clicked;;
 	});
 });
