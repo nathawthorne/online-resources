@@ -122,6 +122,31 @@ $(document).ready(function(){
 		window.location.href=base+'?lang='+new_lang+vars
 	});
 
+	$('#prek').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=prek';
+	});
+	$('#K').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=K';
+	});
+	$('#first').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=first';
+	});
+	$('#second').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=second';
+	});
+	$('#third').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=third';
+	});
+	$('#fourth').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=fourth';
+	});
+	$('#fifth').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=fifth';
+	});
+	$('#specials').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=specials';
+	});
+
 	// Grade code
 	$(".grade").hover(function(){
   	$(this).css("opacity", "0.5");
