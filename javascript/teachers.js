@@ -122,9 +122,15 @@ $(document).ready(function(){
 			window.location.href=base+'?lang='+new_lang+vars
 		});
 
+		var timer;
 		$(".menu_button").hover(function(){
 			$(this).css('display','auto');
-			$('.nav').toggleClass('invisible');
+			clearTimeout(timer);
+			$('.nav').removeClass('invisible');
+		}, function(){
+			timer = setTimeout(function() {
+	        $('.nav').addClass('invisible');
+	    }, 100);
 		});
 
 		$('#prek').click(function(){
