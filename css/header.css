@@ -1,4 +1,8 @@
 
+li {
+  list-style-type:none
+}
+
 .logo {
   background-size:contain;
 	background-repeat:no-repeat;
