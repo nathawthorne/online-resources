@@ -30,7 +30,7 @@
 }
 
 .main_image img {
-  margin-top: 5vh;
+  margin-top: 1.5vh;
   border-radius: 40px;
 }
 
@@ -38,7 +38,7 @@
   background-color: rgba(255,255,255,0.8);
   border-radius: 40px;
 
-  top: 30vh;
+  top: 25vh;
   height: 50vh;
 }
 
