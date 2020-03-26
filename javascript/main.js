@@ -106,10 +106,6 @@ $(document).ready(function(){
 		$('.nav').toggleClass('invisible');
 	});
 
-
-
-
-
 	$('#prek').click(function(){
 		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=prek';
 	});

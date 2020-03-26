@@ -12,6 +12,21 @@
 
 }
 
+.content {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  height: 85vh;
+  text-align: center;
+  color: black;
+
+  word-wrap:normal;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
 video {
   width: 100%;
 }

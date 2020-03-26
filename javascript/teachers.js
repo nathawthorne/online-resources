@@ -1,3 +1,7 @@
+var text_files = {"menu_text":{'en': {'prek': 'Pre-K', 'K': 'Kindergarten', 'first': 'First Grade', 'second': 'Second Grade', 'third': 'Third Grade', 'fourth': 'Fourth Grade', 'fifth': 'Fifth Grade', 'specials': 'Specials'}, 'es': {'prek': 'Pre-K', 'K': 'Kinder', 'first': 'Primer Grado', 'second': 'Segundo Grado', 'third': 'Tercer Grado', 'fourth': 'Cuarto Grado', 'fifth': 'Quinto Grado', 'specials': 'Especiales'}}}
+
+
+
 //##
 
 let prek_teachers=["Mr. Aguilera","Ms. Lingow","Mr. Cocco","Ms. Johnson"]
@@ -31,7 +35,7 @@ function write_teacher(name, section){
 }
 
 function string_to_var(name){
-	return name.replace(/ /g, "_");
+	return name.replace(/\./g,"").replace(/ /g, "_");
 }
 
 function remove_page(key){
@@ -63,6 +67,16 @@ function setup_page(language){
 	} else {
 		$('.lang').html('<h5>English</h5>');
 	}
+
+	// Setting up Menu
+	$('#prek').html(text_files['menu_text'][language]['prek']);
+	$('#K').html(text_files['menu_text'][language]['K']);
+	$('#first').html(text_files['menu_text'][language]['first']);
+	$('#second').html(text_files['menu_text'][language]['second']);
+	$('#third').html(text_files['menu_text'][language]['third']);
+	$('#fourth').html(text_files['menu_text'][language]['fourth']);
+	$('#fifth').html(text_files['menu_text'][language]['fifth']);
+	$('#specials').html(text_files['menu_text'][language]['specials']);
 }
 
 $(document).ready(function(){
@@ -80,34 +94,64 @@ $(document).ready(function(){
 	setup_page(lang);
 
 
-	$(".logo").click(function(){
-		grade_clicked = $(this).attr('id');
+		$(".logo").click(function(){
+			grade_clicked = $(this).attr('id');
 
-		window.location.href='https://www.dallasisd.org/hawthorne';
-	});
+			window.location.href='https://www.dallasisd.org/hawthorne';
+		});
+		$(".school_name").click(function(){
+			grade_clicked = $(this).attr('id');
 
-	$(".school_name").click(function(){
-		grade_clicked = $(this).attr('id');
+			window.location.href='https://www.dallasisd.org/hawthorne';
+		});
 
-		window.location.href='https://www.dallasisd.org/hawthorne';
-	});
+		$(".lang").click(function(){
+			lang = extract_var('lang')
+			if(lang == 'en'){
+				new_lang = 'es';
+			} else {
+				new_lang = 'en';
+			}
+			curr_url = window.location.href
+			base = remove_page('?lang=')
+			base = base.substring(0,base.length-1)
+			vars = curr_url.substring(base.length,curr_url.length);
+			if(vars.startsWith('?lang=')){
+				vars = vars.substring(8,vars.length);
+			}
+			window.location.href=base+'?lang='+new_lang+vars
+		});
 
-	$(".lang").click(function(){
-		lang = extract_var('lang')
-		if(lang == 'en'){
-			new_lang = 'es';
-		} else {
-			new_lang = 'en';
-		}
-		curr_url = window.location.href
-		base = remove_page('?lang=')
-		base = base.substring(0,base.length-1)
-		vars = curr_url.substring(base.length,curr_url.length);
-		if(vars.startsWith('?lang=')){
-			vars = vars.substring(8,vars.length);
-		}
-		window.location.href=base+'?lang='+new_lang+vars
-	});
+		$(".menu_button").hover(function(){
+			$(this).css('display','auto');
+			$('.nav').toggleClass('invisible');
+		});
+
+		$('#prek').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=prek';
+		});
+		$('#K').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=K';
+		});
+		$('#first').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=first';
+		});
+		$('#second').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=second';
+		});
+		$('#third').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=third';
+		});
+		$('#fourth').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=fourth';
+		});
+		$('#fifth').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=fifth';
+		});
+		$('#specials').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=specials';
+		});
+
 
 
 

@@ -40,32 +40,32 @@ with open('all_teachers.txt') as teachers_list:
         if not os.path.isdir(folder_name):
             os.mkdir(folder_name)
 
-        teacher_json = '{\n"teacher_name":"'+teacher+'"\n"grade":"'+grade+'"\n"email":"'+email+'"\n}'
+        teacher_json = '{\n"teacher_name":"'+teacher+'",\n"grade":"'+grade+'",\n"email":"'+email+'"\n}'
         with open(folder_name+'/'+folder_name+'.json','w') as teacher_file:
             teacher_file.write(teacher_json)
 
-to_write = ''
-for key, value in by_grade.items():
-    teacher_names = 'let '+key+'_teachers=['
-    teacher_sections = 'let '+key+'_section=['
-    for name, grade in value:
-        teacher_names += '"'+name+'",'
-        teacher_sections += '"'+grade+'",'
-    teacher_names = teacher_names[0:len(teacher_names)-1]+']'
-    teacher_sections = teacher_sections[0:len(teacher_sections)-1]+']'
-
-    to_write += teacher_names + '\n' + teacher_sections + '\n\n'
-
-# clear out old var
-with open('../javascript/teachers.js') as work_file:
-    data = ""
-    for line in work_file:
-        data += line
-
-remove_index = max(data.index(special_remove) - 2, 0)
-
-data = data[remove_index:]
-data = to_write + data
-
-with open('../javascript/teachers.js', 'w+') as work_file:
-    work_file.write(data)
+# to_write = ''
+# for key, value in by_grade.items():
+#     teacher_names = 'let '+key+'_teachers=['
+#     teacher_sections = 'let '+key+'_section=['
+#     for name, grade in value:
+#         teacher_names += '"'+name+'",'
+#         teacher_sections += '"'+grade+'",'
+#     teacher_names = teacher_names[0:len(teacher_names)-1]+']'
+#     teacher_sections = teacher_sections[0:len(teacher_sections)-1]+']'
+#
+#     to_write += teacher_names + '\n' + teacher_sections + '\n\n'
+#
+# # clear out old var
+# with open('../javascript/teachers.js') as work_file:
+#     data = ""
+#     for line in work_file:
+#         data += line
+#
+# remove_index = max(data.index(special_remove) - 2, 0)
+#
+# data = data[remove_index:]
+# data = to_write + data
+#
+# with open('../javascript/teachers.js', 'w+') as work_file:
+#     work_file.write(data)
