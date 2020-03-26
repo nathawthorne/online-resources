@@ -78,22 +78,12 @@ $(document).ready(function(){
 
 		window.location.href='https://www.dallasisd.org/hawthorne';
 	});
-	$(".logo").hover(function(){
-		$(this).css("cursor", "pointer");
-  }, function(){
-		$(this).css("cursor", "auto");
-	});
 	$(".school_name").click(function(){
 		grade_clicked = $(this).attr('id');
 
 		window.location.href='https://www.dallasisd.org/hawthorne';
 	});
-	$(".school_name").hover(function(){
-		$(this).css("cursor", "pointer");
-  }, function(){
-		$(this).css("cursor", "auto");
-	});
-	
+
 	$(".lang").click(function(){
 		lang = extract_var('lang')
 		if(lang == 'en'){

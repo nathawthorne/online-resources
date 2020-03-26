@@ -79,32 +79,10 @@ $(document).ready(function(){
 
 		window.location.href='https://www.dallasisd.org/hawthorne';
 	});
-	$(".logo").hover(function(){
-		$(this).css("cursor", "pointer");
-  }, function(){
-		$(this).css("cursor", "auto");
-	});
 	$(".school_name").click(function(){
 		grade_clicked = $(this).attr('id');
 
 		window.location.href='https://www.dallasisd.org/hawthorne';
-	});
-	$(".school_name").hover(function(){
-		$(this).css("cursor", "pointer");
-  }, function(){
-		$(this).css("cursor", "auto");
-	});
-	$(".lang").hover(function(){
-		$(this).css("background-color", "white");
-		$(this).css("border-radius", "20px");
-		$(this).css("color", "blue");
-  	$(this).css("opacity", "0.7");
-		$(this).css("cursor", "pointer");
-  }, function(){
-		$(this).css("background-color", "black");
-		$(this).css("color", "white");
-  	$(this).css("opacity", "1");
-		$(this).css("cursor", "auto");
 	});
 	$(".lang").click(function(){
 		lang = extract_var('lang')
@@ -121,12 +99,6 @@ $(document).ready(function(){
 			vars = vars.substring(8,vars.length);
 		}
 		window.location.href=base+'?lang='+new_lang+vars
-	});
-
-	$(".header").hover(function(){
-		$(this).css("cursor", "pointer");
-  }, function(){
-		$(this).css("cursor", "auto");
 	});
 
 
