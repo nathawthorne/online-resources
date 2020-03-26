@@ -54,6 +54,12 @@ li {
   font-size: 2vw;
 }
 
+.lang:hover{
+  color:black;
+  background-color: white;
+  opacity: 0.7;
+}
+
 
 /* menu */
 .menu_container {
