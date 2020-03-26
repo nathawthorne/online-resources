@@ -10,7 +10,7 @@ let prek_section=["PK3","PKA","PKB","PKC"]
 let kinder_teachers=["Ms. Medrano","Ms. Hernandez","Ms. Russell"]
 let kinder_section=["KA","KB","KC"]
 
-let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Stewart"]
+let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Gutierrez"]
 let first_section=["1A","1B","1C"]
 
 let second_teachers=["Ms. Figueroa","Ms. Hortelanos","Ms. Nolan"]
