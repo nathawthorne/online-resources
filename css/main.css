@@ -31,6 +31,7 @@
 
 .main_image img {
   margin-top: 5vh;
+  border-radius: 40px;
 }
 
 .main_text {
