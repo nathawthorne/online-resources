@@ -104,11 +104,6 @@ $(document).ready(function(){
 
 
 	// Grade code
-	$(".header").hover(function(){
-		$(this).css("cursor", "pointer");
-  }, function(){
-		$(this).css("cursor", "auto");
-	});
 
 	var grade = extract_var('grade');
 	var day = extract_var('day');
@@ -155,16 +150,6 @@ $(document).ready(function(){
 		}
 		$('.teacher_container').html(text);
 	}
-
-
-
-	$(".teacher").hover(function(){
-		$(this).css("cursor", "pointer");
-  	$(this).css("opacity", "0.5");
-  }, function(){
-		$(this).css("cursor", "auto");
-  	$(this).css("opacity", "1");
-	});
 
 	$(".teacher").click(function(){
 		teacher = $(this).attr('id');

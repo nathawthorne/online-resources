@@ -62,7 +62,7 @@ body {
 
 }
 .school_name h1{
-  font-size: 7.25vh;
+  font-size: 4.5vh;
   overflow-wrap: break-word;
 }
 .school_name:hover{
@@ -74,6 +74,8 @@ body {
 }
 
 .lang {
+
+  width: 10vw;
   text-align: center;
 
   height: inherit;
