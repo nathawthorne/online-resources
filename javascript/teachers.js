@@ -100,9 +100,8 @@ $(document).ready(function(){
 			window.location.href='https://www.dallasisd.org/hawthorne';
 		});
 		$(".school_name").click(function(){
-			grade_clicked = $(this).attr('id');
 
-			window.location.href='https://www.dallasisd.org/hawthorne';
+			window.location.href=remove_page('/')+'index.html?lang='+lang;
 		});
 
 		$(".lang").click(function(){
