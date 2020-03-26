@@ -1,0 +1,115 @@
+html {
+  margin: 0px;
+  height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+  margin: 0px;
+  min-height: 100vh;
+
+	overflow-x: hidden;
+	/* overflow-y: hidden; */
+
+	background-color: #7f8c8d;
+}
+
+.hover{
+	outline: 100px solid rgba(255, 0, 0, 0.5) !important;
+  outline-offset: -100px;
+  overflow: hidden;
+  position: relative;
+
+	/* display: none; */
+
+  height: 100%;
+  width: 100%;
+	border-radius: 10px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  height: 85vh;
+  text-align: center;
+  color: black;
+}
+
+.content p{
+  font-size: 1.3vw;
+}
+
+.main_image {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.main_image img {
+  margin-top: 5vh;
+}
+
+.main_text {
+  top: 30vh;
+  height: 50vh;
+}
+
+.links {
+  bottom: 0%;
+}
+
+
+
+
+
+
+/* grade level */
+.grade{
+	position: relative;
+	height:45vh;
+
+	padding-left: 1.25vh;
+	padding-right: 1.25vh;
+	margin-top: 2.5vh;
+
+	border-radius: 40px;
+
+	color: black;
+
+}
+.grade_container{
+  display: flex;
+  flex-flow: column;
+  height: 85vh;
+
+}
+
+.row{
+  flex-grow : 1;
+}
+
+.img_button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+	background-size: cover;
+	background-repeat:no-repeat;
+
+	background-color: white;
+
+  flex-grow : 1;
+
+}
+
+.grade h2 {
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#fifth {
+	margin-bottom: 0vh;
+}

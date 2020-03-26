@@ -1,0 +1,9 @@
+{
+	"image":"imgs/anfernandez.jpg",
+	"text":{
+		"en":"Hello everyone!",
+		"es":"Hola todos!"
+	},
+	"links":["www.google.com", "www.bing.com"],
+	"links_text":["Google", "Bing"]
+}

@@ -1,3 +1,12 @@
+var text_files = {
+"main_page":{'image': 'imgs/anfernandez.jpg', 'text': {'en': 'Hello everyone!', 'es': 'Hola todos!'}, 'links': ['www.google.com', 'www.bing.com'], 'links_text': ['Google', 'Bing']},
+"menu_text":{'en': {'prek': 'Pre-K', 'K': 'Kindergarten', 'first': 'First Grade', 'second': 'Second Grade', 'third': 'Third Grade', 'fourth': 'Fourth Grade', 'fifth': 'Fifth Grade', 'specials': 'Specials'}, 'es': {'prek': 'Pre-K', 'K': 'Kinder', 'first': 'Primer Grado', 'second': 'Segundo Grado', 'third': 'Tercer Grado', 'fourth': 'Cuarto Grado', 'fifth': 'Quinto Grado', 'specials': 'Especiales'}}}
+
+
+
+//##
+
+
 function remove_page(key){
 	url = window.location.href
 	last_sl = url.lastIndexOf(key)
@@ -26,6 +35,32 @@ function setup_page(language){
 	} else {
 		$('.lang').html('<span> </span><h5>English</h5>');
 	}
+
+	// Setting up Menu
+	$('#prek').html(text_files['menu_text'][language]['prek']);
+	$('#K').html(text_files['menu_text'][language]['K']);
+	$('#first').html(text_files['menu_text'][language]['first']);
+	$('#second').html(text_files['menu_text'][language]['second']);
+	$('#third').html(text_files['menu_text'][language]['third']);
+	$('#fourth').html(text_files['menu_text'][language]['fourth']);
+	$('#fifth').html(text_files['menu_text'][language]['fifth']);
+	$('#specials').html(text_files['menu_text'][language]['specials']);
+
+	// setting up main content
+	$('.main_image').html('<img src="'+text_files['main_page']['image']+'">');
+	$('.main_text').html('<p>'+text_files['main_page']['text'][language]+'</p>');
+
+	// setting up links
+	var links = text_files['main_page']['links'];
+	var link_text = text_files['main_page']['links_text'];
+	to_write = ""
+	for(var link_id = 0; link_id < links.length; link_id++){
+		var txt = link_text[link_id];
+		var src = links[link_id];
+
+		to_write += '<a href="'+src+'">'+txt+'</a><br>'
+	}
+	$('.links').html(to_write);
 }
 
 $(document).ready(function(){

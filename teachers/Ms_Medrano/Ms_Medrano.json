@@ -1,6 +1,8 @@
 {
 	"teacher_name": "Ms Medrano",
 	"grade": "K-A",
+	"email": "medrano@dallasisd.org",
+	"availability": "11am - 2pm MWF",
 	"work":[
 		"text__Monday",
 		"text__Alpha Go Documentary",
