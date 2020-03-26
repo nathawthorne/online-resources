@@ -49,16 +49,21 @@ body {
 }
 
 .school_name {
+  width: 85vw;
+  max-width: 85vw;
+  left:15vw;
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  text-transform: uppercase;
-  overflow-wrap: break-word;
+  /* text-transform: uppercase; */
+
 }
 .school_name h1{
-  font-size: 3vw;
+  font-size: 7.25vh;
+  overflow-wrap: break-word;
 }
 .school_name:hover{
   cursor: pointer;
@@ -73,7 +78,7 @@ body {
 
   height: inherit;
 
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   display: flex;
   align-items: center;
@@ -96,6 +101,7 @@ body {
 .menu_container {
   display: inline-block;
   cursor: pointer;
+  margin-left: 2.5vw;
 }
 
 .bar1, .bar2, .bar3 {
@@ -106,6 +112,8 @@ body {
 }
 
 .nav {
+  top: 15vh;
+  left:2.5vw;
   position: absolute;
   background-color: black;
   margin-top: 0vh;
