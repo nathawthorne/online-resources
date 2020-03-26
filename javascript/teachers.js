@@ -1,20 +1,28 @@
-let kinder_teachers = ['Ms Medrano', 'Ms Hernandez', 'Ms Russell']
-let kinder_section = ['KA','KB','KC']
+//##
 
-let first_teachers = ['Ms Neil', 'Ms Escobedo', 'Ms Stewart']
-let first_section = ['1A','1B','1C']
+let prek_teachers=["Mr. Aguilera","Ms. Lingow","Mr. Cocco","Ms. Johnson"]
+let prek_section=["PK3","PKA","PKB","PKC"]
 
-let second_teachers = ['Mr Figueroa', 'Ms Hortelano', 'Ms Nolan']
-let second_section = ['2A','2C','2D']
+let kinder_teachers=["Ms. Medrano","Ms. Hernandez","Ms. Russell"]
+let kinder_section=["KA","KB","KC"]
 
-let third_teachers = ['Ms Vaquerano', 'Ms Gonzalez', 'Mr Galvan']
-let third_section = ['3A','3B','3C']
+let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Stewart"]
+let first_section=["1A","1B","1C"]
 
-let fourth_teachers = ['Ms Reyes', 'Mr Vera', 'Ms Veasna']
-let fourth_section = ['4A','4B','4C']
+let second_teachers=["Ms. Figueroa","Ms. Hortelanos","Ms. Nolan"]
+let second_section=["2A","2C","2D"]
 
-let fifth_teachers = ['Mr Oveido', 'Ms Lopez', 'Ms Lee']
-let fifth_section = ['5A', '5B', '5C']
+let third_teachers=["Ms. Vaquerano","Ms. Gonzalez","Mr. Galvan"]
+let third_section=["3A","3B","3C"]
+
+let fourth_teachers=["Ms. Reyes","Mr. Vera","Ms. Veasna"]
+let fourth_section=["4A","4B","4C"]
+
+let fifth_teachers=["Dr. Zamora","Ms. Lopez","Ms. Lee"]
+let fifth_section=["5A","5B","5C"]
+
+let specials_teachers=["Ms. Manning","Mr. Morrow","Ms. Bishop","Ms. Valero","Ms. Cooper"]
+let specials_section=["PE","Art","Music","TAG","Library"]
 
 
 function write_teacher(name, section){
@@ -108,7 +116,14 @@ $(document).ready(function(){
 	var grade = extract_var('grade');
 	var day = extract_var('day');
 
-	if (grade == 'K'){
+	if (grade == 'prek'){
+		text = ""
+		for (var teacher_id = 0; teacher_id < kinder_teachers.length; teacher_id++) {
+  		text += write_teacher(prek_teachers[teacher_id], prek_section[teacher_id]);
+		}
+		$('.teacher_container').html(text);
+	}
+	else if (grade == 'K'){
 		text = ""
 		for (var teacher_id = 0; teacher_id < kinder_teachers.length; teacher_id++) {
   		text += write_teacher(kinder_teachers[teacher_id], kinder_section[teacher_id]);
@@ -147,6 +162,13 @@ $(document).ready(function(){
 		text = ""
 		for (var teacher_id = 0; teacher_id < fifth_teachers.length; teacher_id++) {
   		text += write_teacher(fifth_teachers[teacher_id], fifth_section[teacher_id]);
+		}
+		$('.teacher_container').html(text);
+	}
+	else if (grade == 'specials'){
+		text = ""
+		for (var teacher_id = 0; teacher_id < specials_teachers.length; teacher_id++) {
+  		text += write_teacher(specials_teachers[teacher_id], specials_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);
 	}
