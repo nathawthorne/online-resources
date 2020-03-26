@@ -4,6 +4,10 @@
 		"en":"Hello everyone!",
 		"es":"Hola todos!"
 	},
+	"links_title":{
+		"en":"Helpful Links",
+		"es":"Apoyo Electronico"
+	},
 	"links":["www.google.com", "www.bing.com"],
 	"links_text":["Google", "Bing"]
 }

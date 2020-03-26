@@ -1,5 +1,5 @@
 var text_files = {
-"main_page":{'image': 'imgs/anfernandez.jpg', 'text': {'en': 'Hello everyone!', 'es': 'Hola todos!'}, 'links': ['www.google.com', 'www.bing.com'], 'links_text': ['Google', 'Bing']},
+"main_page":{'image': 'imgs/anfernandez.jpg', 'text': {'en': 'Hello everyone!', 'es': 'Hola todos!'}, 'links_title': {'en': 'Helpful Links', 'es': 'Apoyo Electronico'}, 'links': ['www.google.com', 'www.bing.com'], 'links_text': ['Google', 'Bing']},
 "menu_text":{'en': {'prek': 'Pre-K', 'K': 'Kindergarten', 'first': 'First Grade', 'second': 'Second Grade', 'third': 'Third Grade', 'fourth': 'Fourth Grade', 'fifth': 'Fifth Grade', 'specials': 'Specials'}, 'es': {'prek': 'Pre-K', 'K': 'Kinder', 'first': 'Primer Grado', 'second': 'Segundo Grado', 'third': 'Tercer Grado', 'fourth': 'Cuarto Grado', 'fifth': 'Quinto Grado', 'specials': 'Especiales'}}}
 
 
@@ -53,12 +53,12 @@ function setup_page(language){
 	// setting up links
 	var links = text_files['main_page']['links'];
 	var link_text = text_files['main_page']['links_text'];
-	to_write = ""
+	to_write = "<h4>"+text_files['main_page']['links_title'][language]+"</h4>"
 	for(var link_id = 0; link_id < links.length; link_id++){
 		var txt = link_text[link_id];
 		var src = links[link_id];
 
-		to_write += '<a href="'+src+'">'+txt+'</a><br>'
+		to_write += '<a href="'+src+'">'+txt+'</a>&nbsp;&nbsp;&nbsp;&nbsp;'
 	}
 	$('.links').html(to_write);
 }
