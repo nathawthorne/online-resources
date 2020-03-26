@@ -207,7 +207,12 @@ $(document).ready(function(){
 			}
 			else if(all_work[work_id].startsWith(special_link)){
 				link = all_work[work_id].substring(special_link.length);
-				html_doc+='<a class="link" href="'+link+'"><h3>Click Here</h3></a><br>'
+				if(lang == 'en'){
+					html_doc+='<a class="link" href="'+link+'"><h3>Click Here</h3></a><br>'
+				}else{
+					html_doc+='<a class="link" href="'+link+'"><h3>Haz Click Aqui</h3></a><br>'
+				}
+
 			}
 			else if(all_work[work_id].startsWith(special_video)){
 				link = all_work[work_id].substring(special_video.length);
