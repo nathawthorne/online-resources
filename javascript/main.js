@@ -122,6 +122,15 @@ $(document).ready(function(){
 		window.location.href=base+'?lang='+new_lang+vars
 	});
 
+	$(".menu_button").hover(function(){
+		$(this).css('display','auto');
+		$('.nav').toggleClass('invisible');
+	});
+
+
+
+
+
 	$('#prek').click(function(){
 		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=prek';
 	});

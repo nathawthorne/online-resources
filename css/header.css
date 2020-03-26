@@ -2,6 +2,10 @@
 ul {
     padding: 0;
     list-style-type: none;
+    display:inline-table;
+}
+
+li {
 }
 
 .logo {
@@ -39,8 +43,10 @@ ul {
 }
 
 .lang {
-
+  top: 25%;
   text-align: center;
+
+  height: inherit;
 
   text-transform: uppercase;
 }
@@ -60,12 +66,12 @@ ul {
   height: 1vw;
   background-color: #FFF;
   margin: 1vw 0;
-  transition: 0.4s;
 }
 
-.dropdown-menu {
+.nav {
+  position: absolute;
   background-color: black;
-  top: 15vh;
+  margin-top: 0vh;
 }
 
 .dropdown-item {
@@ -78,4 +84,8 @@ ul {
 .dropdown-item:hover {
   background-color: white;
   color: black;
+}
+
+.invisible {
+  display: none;
 }
