@@ -63,9 +63,9 @@ function extract_var(name){
 
 function setup_page(language){
 	if(language == 'en'){
-		$('.lang').html('<h5>Espa&#xf1;ol</h5>');
+		$('.lang').html('<h5>A Espa&#xf1;ol</h5>');
 	} else {
-		$('.lang').html('<h5>English</h5>');
+		$('.lang').html('<h5>To English</h5>');
 	}
 
 	// Setting up Menu

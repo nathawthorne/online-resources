@@ -21,7 +21,7 @@
 }
 
 .content p{
-  font-size: 2.5vw;
+  font-size: 4vh;
 }
 
 .main_image {
@@ -34,64 +34,14 @@
 }
 
 .main_text {
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 40px;
+
   top: 30vh;
   height: 50vh;
 }
 
 .links {
+  background-color: rgba(255,255,255,0.8);
   bottom: 0%;
-}
-
-
-
-
-
-
-/* grade level */
-.grade{
-	position: relative;
-	height:45vh;
-
-	padding-left: 1.25vh;
-	padding-right: 1.25vh;
-	margin-top: 2.5vh;
-
-	border-radius: 40px;
-
-	color: black;
-
-}
-.grade_container{
-  display: flex;
-  flex-flow: column;
-  height: 85vh;
-
-}
-
-.row{
-  flex-grow : 1;
-}
-
-.img_button {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-
-	background-size: cover;
-	background-repeat:no-repeat;
-
-	background-color: white;
-
-  flex-grow : 1;
-
-}
-
-.grade h2 {
-	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.9);
-}
-
-#fifth {
-	margin-bottom: 0vh;
 }
