@@ -1,31 +1,31 @@
 var teacher_work = {
-"Dr_Zamora":{'teacher_name': 'Dr. Zamora', 'grade': '5A', 'email': 'azamoraoviedo@dallasisd.org'},
+"Dr_Zamora":{'teacher_name': 'Dr. Zamora', 'grade': '5A', 'email': 'azamoraoviedo@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/10kFarbKZ1aWfo9KLcI1U9V6N0BL7KvdX2w-u9Em6GDQ/edit?usp=sharing']},
 "Mr_Aguilera":{'teacher_name': 'Mr. Aguilera', 'grade': 'PK3', 'email': 'joaguilera@dallasisd.org'},
 "Mr_Cocco":{'teacher_name': 'Mr. Cocco', 'grade': 'PKB', 'email': 'acocco@dallasisd.org'},
-"Mr_Galvan":{'teacher_name': 'Mr. Galvan', 'grade': '3C', 'email': 'omgalvan@dallasisd.org'},
+"Mr_Galvan":{'teacher_name': 'Mr. Galvan', 'grade': '3C', 'email': 'omgalvan@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit?usp=sharing']},
 "Mr_Morrow":{'teacher_name': 'Mr. Morrow', 'grade': 'Art', 'email': 'domorrow@dallasisd.org'},
-"Mr_Vera":{'teacher_name': 'Mr. Vera', 'grade': '4B', 'email': 'anvera@dallasisd.org'},
+"Mr_Vera":{'teacher_name': 'Mr. Vera', 'grade': '4B', 'email': 'anvera@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing']},
 "Ms_Bishop":{'teacher_name': 'Ms. Bishop', 'grade': 'Music', 'email': 'rdbishop@dallasisd.org'},
 "Ms_Cooper":{'teacher_name': 'Ms. Cooper', 'grade': 'Library', 'email': 'cocooper@dallasisd.org'},
-"Ms_Escobedo":{'teacher_name': 'Ms. Escobedo', 'grade': '1B', 'email': 'vescobedo@dallasisd.org'},
-"Ms_Figueroa":{'teacher_name': 'Ms. Figueroa', 'grade': '2A', 'email': 'dfreytes@dallasisd.org'},
-"Ms_Gonzalez":{'teacher_name': 'Ms. Gonzalez', 'grade': '3B', 'email': 'mcosme@dallasisd.org'},
+"Ms_Escobedo":{'teacher_name': 'Ms. Escobedo', 'grade': '1B', 'email': 'vescobedo@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit?usp=sharing']},
+"Ms_Figueroa":{'teacher_name': 'Ms. Figueroa', 'grade': '2A', 'email': 'dfreytes@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1gz5-G9NpoOVN7uWfamQkxEBBtR1H8ZOftVTBgIPJs_I/edit?usp=sharing', 'text__Semana de 3/30 a 4/3 (Espa&#xf1;ol)', 'link__https://docs.google.com/document/d/1nmIfFq42A_8TOdzUNW3KRLqcDVHkqcpYLH0SBMZHFg8/edit?usp=sharing']},
+"Ms_Gonzalez":{'teacher_name': 'Ms. Gonzalez', 'grade': '3B', 'email': 'mcosme@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit?usp=sharing']},
 "Ms_Hernandez":{'teacher_name': 'Ms. Hernandez', 'grade': 'KB', 'email': 'mhernandezramirez@dallasisd.org'},
-"Ms_Hortelanos":{'teacher_name': 'Ms. Hortelanos', 'grade': '2C', 'email': 'mhortelanogarcia@dallasisd.org'},
+"Ms_Hortelanos":{'teacher_name': 'Ms. Hortelanos', 'grade': '2C', 'email': 'mhortelanogarcia@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1gz5-G9NpoOVN7uWfamQkxEBBtR1H8ZOftVTBgIPJs_I/edit?usp=sharing', 'text__Semana de 3/30 a 4/3 (Espa&#xf1;ol)', 'link__https://docs.google.com/document/d/1nmIfFq42A_8TOdzUNW3KRLqcDVHkqcpYLH0SBMZHFg8/edit?usp=sharing']},
 "Ms_Johnson":{'teacher_name': 'Ms. Johnson', 'grade': 'PKC', 'email': 'margjohns@dallasisd.org'},
-"Ms_Lee":{'teacher_name': 'Ms. Lee', 'grade': '5C', 'email': 'jennilee@dallasisd.org'},
+"Ms_Lee":{'teacher_name': 'Ms. Lee', 'grade': '5C', 'email': 'jennilee@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/10kFarbKZ1aWfo9KLcI1U9V6N0BL7KvdX2w-u9Em6GDQ/edit?usp=sharing']},
 "Ms_Lingow":{'teacher_name': 'Ms. Lingow', 'grade': 'PKA', 'email': 'vlingow@dallasisd.org'},
-"Ms_Lopez":{'teacher_name': 'Ms. Lopez', 'grade': '5B', 'email': 'hylopez@dallasisd.org'},
+"Ms_Lopez":{'teacher_name': 'Ms. Lopez', 'grade': '5B', 'email': 'hylopez@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/10kFarbKZ1aWfo9KLcI1U9V6N0BL7KvdX2w-u9Em6GDQ/edit?usp=sharing']},
 "Ms_Manning":{'teacher_name': 'Ms. Manning', 'grade': 'PE', 'email': 'vmanning@dallasisd.org'},
 "Ms_Medrano":{'teacher_name': 'Ms. Medrano', 'grade': 'KA', 'email': 'clmedrano@dallasisd.org'},
-"Ms_Neil":{'teacher_name': 'Ms. Neil', 'grade': '1A', 'email': 'mneil@dallasisd.org'},
-"Ms_Nolan":{'teacher_name': 'Ms. Nolan', 'grade': '2D', 'email': 'chrodgers@dallasisd.org'},
-"Ms_Reyes":{'teacher_name': 'Ms. Reyes', 'grade': '4A', 'email': 'cecreyes@dallasisd.org'},
+"Ms_Neil":{'teacher_name': 'Ms. Neil', 'grade': '1A', 'email': 'mneil@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit?usp=sharing']},
+"Ms_Nolan":{'teacher_name': 'Ms. Nolan', 'grade': '2D', 'email': 'chrodgers@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1gz5-G9NpoOVN7uWfamQkxEBBtR1H8ZOftVTBgIPJs_I/edit?usp=sharing', 'text__Semana de 3/30 a 4/3 (Espa&#xf1;ol)', 'link__https://docs.google.com/document/d/1nmIfFq42A_8TOdzUNW3KRLqcDVHkqcpYLH0SBMZHFg8/edit?usp=sharing']},
+"Ms_Reyes":{'teacher_name': 'Ms. Reyes', 'grade': '4A', 'email': 'cecreyes@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing']},
 "Ms_Russell":{'teacher_name': 'Ms. Russell', 'grade': 'KC', 'email': 'torussel@dallasisd.org'},
-"Ms_Stewart":{'teacher_name': 'Ms. Stewart', 'grade': '1C', 'email': 'kastewart@dallasisd.org'},
+"Ms_Stewart":{'teacher_name': 'Ms. Stewart', 'grade': '1C', 'email': 'kastewart@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit?usp=sharing']},
 "Ms_Valero":{'teacher_name': 'Ms. Valero', 'grade': 'TAG', 'email': 'acolon@dallasisd.org'},
-"Ms_Vaquerano":{'teacher_name': 'Ms. Vaquerano', 'grade': '3A', 'email': 'jvaqerano@dallasisd.org'},
-"Ms_Veasna":{'teacher_name': 'Ms. Veasna', 'grade': '4C', 'email': 'vkok@dallasisd.org'}}
+"Ms_Vaquerano":{'teacher_name': 'Ms. Vaquerano', 'grade': '3A', 'email': 'jvaqerano@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit?usp=sharing']},
+"Ms_Veasna":{'teacher_name': 'Ms. Veasna', 'grade': '4C', 'email': 'vkok@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing']}}
 
 
 
@@ -195,9 +195,9 @@ $(document).ready(function(){
 	if(json_document.hasOwnProperty('work')){
 		all_work = json_document['work'];
 		for(var work_id = 0; work_id < all_work.length; work_id++){
+			console.log(all_work[work_id]);
 			if(all_work[work_id].startsWith(special_text)){
 				text = all_work[work_id].substring(special_text.length);
-
 				if(text.length == 0){
 					html_doc += "<br>";
 				}
@@ -207,7 +207,7 @@ $(document).ready(function(){
 			}
 			else if(all_work[work_id].startsWith(special_link)){
 				link = all_work[work_id].substring(special_link.length);
-				html_doc+='<a class="link" href="'+link+'"><h3>Click Here</h3></a>'
+				html_doc+='<a class="link" href="'+link+'"><h3>Click Here</h3></a><br>'
 			}
 			else if(all_work[work_id].startsWith(special_video)){
 				link = all_work[work_id].substring(special_video.length);
@@ -221,7 +221,5 @@ $(document).ready(function(){
 			}
 		}
 	}
-	lastbr = html_doc.lastIndexOf('<br>')
-	html_doc = html_doc.substring(0, lastbr)
 	$('.work_container').html(html_doc);
 });

@@ -1,5 +1,15 @@
 import os
 
+grade_links = {'prek':[],
+                'kinder': [],
+                'first':["https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit?usp=sharing"],
+                'second':["https://docs.google.com/document/d/1gz5-G9NpoOVN7uWfamQkxEBBtR1H8ZOftVTBgIPJs_I/edit?usp=sharing", "https://docs.google.com/document/d/1nmIfFq42A_8TOdzUNW3KRLqcDVHkqcpYLH0SBMZHFg8/edit?usp=sharing"],
+                'third':["https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit?usp=sharing"],
+                'fourth':["https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing"],
+                'fifth':["https://docs.google.com/document/d/10kFarbKZ1aWfo9KLcI1U9V6N0BL7KvdX2w-u9Em6GDQ/edit?usp=sharing"],
+                'specials':[]
+                 }
+
 special_remove = '//##'
 by_grade = dict({'prek':[],
                  'kinder':[],
@@ -15,24 +25,35 @@ with open('all_teachers.txt') as teachers_list:
     for line in teachers_list:
         print(line)
         teacher_info = line.strip()
-        teacher,grade,email = teacher_info.split('\t')
+        teacher,section,email = teacher_info.split('\t')
 
-        if grade.startswith('PK'):
-            by_grade['prek'].append((teacher, grade))
-        elif grade.startswith('K'):
-            by_grade['kinder'].append((teacher, grade))
-        elif grade.startswith('1'):
-            by_grade['first'].append((teacher, grade))
-        elif grade.startswith('2'):
-            by_grade['second'].append((teacher, grade))
-        elif grade.startswith('3'):
-            by_grade['third'].append((teacher, grade))
-        elif grade.startswith('4'):
-            by_grade['fourth'].append((teacher, grade))
-        elif grade.startswith('5'):
-            by_grade['fifth'].append((teacher, grade))
+        grade = None;
+        if section.startswith('PK'):
+            by_grade['prek'].append((teacher, section))
+            grade = 'prek'
+        elif section.startswith('K'):
+            by_grade['kinder'].append((teacher, section))
+            grade = 'kinder'
+        elif section.startswith('1'):
+            by_grade['first'].append((teacher, section))
+            grade = 'first'
+        elif section.startswith('2'):
+            by_grade['second'].append((teacher, section))
+            grade = 'second'
+        elif section.startswith('3'):
+            by_grade['third'].append((teacher, section))
+            grade = 'third'
+        elif section.startswith('4'):
+            by_grade['fourth'].append((teacher, section))
+            grade = 'fourth'
+        elif section.startswith('5'):
+            by_grade['fifth'].append((teacher, section))
+            grade = 'fifth'
         else:
-            by_grade['specials'].append((teacher, grade))
+            by_grade['specials'].append((teacher, section))
+            grade = 'specials'
+
+        relevant_content = grade_links[grade]
 
         folder_name = teacher.replace('.','')
         folder_name = folder_name.replace(' ','_')
@@ -40,7 +61,18 @@ with open('all_teachers.txt') as teachers_list:
         if not os.path.isdir(folder_name):
             os.mkdir(folder_name)
 
-        teacher_json = '{\n"teacher_name":"'+teacher+'",\n"grade":"'+grade+'",\n"email":"'+email+'"\n}'
+        teacher_json = '{\n"teacher_name":"'+teacher+'",\n"grade":"'+section+'",\n"email":"'+email+'"'
+        if len(relevant_content) > 0:
+            teacher_json += ',\n"work":['
+
+            for link_id, link in enumerate(relevant_content):
+                if link_id == 0:
+                    teacher_json += '"text__Week of 3/30 to 4/3 (English)",\n"link__'+link+'",\n'
+                else:
+                    teacher_json += '"text__Semana de 3/30 a 4/3 (Espa&#xf1;ol)",\n"link__'+link+'",\n'
+
+            teacher_json = teacher_json.strip()[0:len(teacher_json)-2]+']'
+        teacher_json += '\n}'
         with open(folder_name+'/'+folder_name+'.json','w') as teacher_file:
             teacher_file.write(teacher_json)
 
