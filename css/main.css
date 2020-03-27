@@ -16,6 +16,7 @@
   width: 100%;
   top: 15%;
   height: 85vh;
+
   text-align: center;
   color: black;
 
@@ -38,10 +39,12 @@
 
 .main_text {
   background-color: rgba(255,255,255,0.8);
-  border-radius: 40px;
+  border-radius: 10px;
 
   top: 25vh;
-  height: 50vh;
+
+	display: inline-block;
+	margin-bottom: 3vh;
 }
 
 .links {
