@@ -9,8 +9,8 @@ Ms. Neil	1A	mneil@dallasisd.org
 Ms. Escobedo	1B	vescobedo@dallasisd.org
 Ms. Stewart	1C	kastewart@dallasisd.org
 Ms. Figueroa	2A	dfreytes@dallasisd.org
-Ms. Hortelanos	2C	mhortelanogarcia@dallasisd.org
-Ms. Nolan	2D	chrodgers@dallasisd.org
+Ms. Hortelanos	2B	mhortelanogarcia@dallasisd.org
+Ms. Nolan	2C	chrodgers@dallasisd.org
 Ms. Vaquerano	3A	jvaqerano@dallasisd.org
 Ms. Gonzalez	3B	mcosme@dallasisd.org
 Mr. Galvan	3C	omgalvan@dallasisd.org
@@ -31,3 +31,4 @@ Ms. Beaver	PPCDB	lbeaver@dallasisd.org
 Ms. Rios	Inclusion	grrios@dallasisd.org
 Ms. Parra	Dyslexia	cperea@dallasisd.org
 Ms. White	Speech	cwhite@dallasisd.org
+Ms. Fisher	FLS	chrfisher@dallasisd.org

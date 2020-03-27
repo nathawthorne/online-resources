@@ -8,7 +8,7 @@ let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Stewart"]
 let first_section=["1A","1B","1C"]
 
 let second_teachers=["Ms. Figueroa","Ms. Hortelanos","Ms. Nolan"]
-let second_section=["2A","2C","2D"]
+let second_section=["2A","2B","2C"]
 
 let third_teachers=["Ms. Vaquerano","Ms. Gonzalez","Mr. Galvan"]
 let third_section=["3A","3B","3C"]
@@ -22,8 +22,8 @@ let fifth_section=["5A","5B","5C"]
 let specials_teachers=["Ms. Manning","Mr. Morrow","Ms. Bishop","Ms. Valero","Ms. Cooper"]
 let specials_section=["PE","Art","Music","TAG","Library"]
 
-let sped_teachers=["Mr. Nickson","Ms. Pooler","Ms. Beaver","Ms. Rios","Ms. Parra","Ms. White"]
-let sped_section=["SPED","PPCDA","PPCDB","Inclusion","Dyslexia","Speech"]
+let sped_teachers=["Mr. Nickson","Ms. Pooler","Ms. Beaver","Ms. Rios","Ms. Parra","Ms. White","Ms. Fisher"]
+let sped_section=["SPED","PPCDA","PPCDB","Inclusion","Dyslexia","Speech","FLS"]
 
 
 
