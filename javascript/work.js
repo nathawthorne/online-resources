@@ -4,7 +4,9 @@ var teacher_work = {
 "Mr_Cocco":{'teacher_name': 'Mr. Cocco', 'grade': 'PKB', 'email': 'acocco@dallasisd.org'},
 "Mr_Galvan":{'teacher_name': 'Mr. Galvan', 'grade': '3C', 'email': 'omgalvan@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit?usp=sharing']},
 "Mr_Morrow":{'teacher_name': 'Mr. Morrow', 'grade': 'Art', 'email': 'domorrow@dallasisd.org'},
+"Mr_Nickson":{'teacher_name': 'Mr. Nickson', 'grade': 'SPED', 'email': 'snickson@dallasisd.org'},
 "Mr_Vera":{'teacher_name': 'Mr. Vera', 'grade': '4B', 'email': 'anvera@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing']},
+"Ms_Beaver":{'teacher_name': 'Ms. Beaver', 'grade': 'PPCDB', 'email': 'lbeaver@dallasisd.org'},
 "Ms_Bishop":{'teacher_name': 'Ms. Bishop', 'grade': 'Music', 'email': 'rdbishop@dallasisd.org'},
 "Ms_Cooper":{'teacher_name': 'Ms. Cooper', 'grade': 'Library', 'email': 'cocooper@dallasisd.org'},
 "Ms_Escobedo":{'teacher_name': 'Ms. Escobedo', 'grade': '1B', 'email': 'vescobedo@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit?usp=sharing']},
@@ -21,11 +23,16 @@ var teacher_work = {
 "Ms_Medrano":{'teacher_name': 'Ms. Medrano', 'grade': 'KA', 'email': 'clmedrano@dallasisd.org'},
 "Ms_Neil":{'teacher_name': 'Ms. Neil', 'grade': '1A', 'email': 'mneil@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit?usp=sharing']},
 "Ms_Nolan":{'teacher_name': 'Ms. Nolan', 'grade': '2D', 'email': 'chrodgers@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1gz5-G9NpoOVN7uWfamQkxEBBtR1H8ZOftVTBgIPJs_I/edit?usp=sharing', 'text__Semana de 3/30 a 4/3 (Espa&#xf1;ol)', 'link__https://docs.google.com/document/d/1nmIfFq42A_8TOdzUNW3KRLqcDVHkqcpYLH0SBMZHFg8/edit?usp=sharing']},
+"Ms_Parra":{'teacher_name': 'Ms. Parra', 'grade': 'Dyslexia', 'email': 'cperea@dallasisd.org'},
+"Ms_Pooler":{'teacher_name': 'Ms. Pooler', 'grade': 'PPCDA', 'email': 'tpooler@dallasisd.org'},
 "Ms_Reyes":{'teacher_name': 'Ms. Reyes', 'grade': '4A', 'email': 'cecreyes@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing']},
+"Ms_Rios":{'teacher_name': 'Ms. Rios', 'grade': 'Inclusion', 'email': 'grrios@dallasisd.org'},
 "Ms_Russell":{'teacher_name': 'Ms. Russell', 'grade': 'KC', 'email': 'torussel@dallasisd.org'},
+"Ms_Stewart":{'teacher_name': 'Ms. Stewart', 'grade': '1C', 'email': 'kastewart@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit?usp=sharing']},
 "Ms_Valero":{'teacher_name': 'Ms. Valero', 'grade': 'TAG', 'email': 'acolon@dallasisd.org'},
 "Ms_Vaquerano":{'teacher_name': 'Ms. Vaquerano', 'grade': '3A', 'email': 'jvaqerano@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit?usp=sharing']},
-"Ms_Veasna":{'teacher_name': 'Ms. Veasna', 'grade': '4C', 'email': 'vkok@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing']}}
+"Ms_Veasna":{'teacher_name': 'Ms. Veasna', 'grade': '4C', 'email': 'vkok@dallasisd.org', 'work': ['text__Week of 3/30 to 4/3 (English)', 'link__https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing']},
+"Ms_White":{'teacher_name': 'Ms. White', 'grade': 'Speech', 'email': 'cwhite@dallasisd.org'}}
 
 
 
@@ -181,6 +188,9 @@ $(document).ready(function(){
 		});
 		$('#specials').click(function(){
 			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=specials';
+		});
+		$('#sped').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=sped';
 		});
 
 

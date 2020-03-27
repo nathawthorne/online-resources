@@ -140,6 +140,9 @@ $(document).ready(function(){
 	$('#specials').click(function(){
 		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=specials';
 	});
+	$('#sped').click(function(){
+		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=sped';
+	});
 
 	// Grade code
 	$(".grade").hover(function(){

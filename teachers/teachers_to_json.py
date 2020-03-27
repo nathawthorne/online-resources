@@ -7,7 +7,8 @@ grade_links = {'prek':[],
                 'third':["https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit?usp=sharing"],
                 'fourth':["https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing"],
                 'fifth':["https://docs.google.com/document/d/10kFarbKZ1aWfo9KLcI1U9V6N0BL7KvdX2w-u9Em6GDQ/edit?usp=sharing"],
-                'specials':[]
+                'specials':[],
+                'sped':[]
                  }
 
 special_remove = '//##'
@@ -18,8 +19,11 @@ by_grade = dict({'prek':[],
                  'third':[],
                  'fourth':[],
                  'fifth':[],
-                 'specials':[]
+                 'specials':[],
+                 'sped':[]
                  })
+
+sped = set(['FLS','SPED','PPCDA','PPCDB','Inclusion','Dyslexia','Speech'])
 
 with open('all_teachers.txt') as teachers_list:
     for line in teachers_list:
@@ -49,6 +53,9 @@ with open('all_teachers.txt') as teachers_list:
         elif section.startswith('5'):
             by_grade['fifth'].append((teacher, section))
             grade = 'fifth'
+        elif section in sped:
+            by_grade['sped'].append((teacher, section))
+            grade = 'sped'
         else:
             by_grade['specials'].append((teacher, section))
             grade = 'specials'
@@ -76,28 +83,28 @@ with open('all_teachers.txt') as teachers_list:
         with open(folder_name+'/'+folder_name+'.json','w') as teacher_file:
             teacher_file.write(teacher_json)
 
-# to_write = ''
-# for key, value in by_grade.items():
-#     teacher_names = 'let '+key+'_teachers=['
-#     teacher_sections = 'let '+key+'_section=['
-#     for name, grade in value:
-#         teacher_names += '"'+name+'",'
-#         teacher_sections += '"'+grade+'",'
-#     teacher_names = teacher_names[0:len(teacher_names)-1]+']'
-#     teacher_sections = teacher_sections[0:len(teacher_sections)-1]+']'
-#
-#     to_write += teacher_names + '\n' + teacher_sections + '\n\n'
-#
-# # clear out old var
-# with open('../javascript/teachers.js') as work_file:
-#     data = ""
-#     for line in work_file:
-#         data += line
-#
-# remove_index = max(data.index(special_remove) - 2, 0)
-#
-# data = data[remove_index:]
-# data = to_write + data
-#
-# with open('../javascript/teachers.js', 'w+') as work_file:
-#     work_file.write(data)
+to_write = ''
+for key, value in by_grade.items():
+    teacher_names = 'let '+key+'_teachers=['
+    teacher_sections = 'let '+key+'_section=['
+    for name, grade in value:
+        teacher_names += '"'+name+'",'
+        teacher_sections += '"'+grade+'",'
+    teacher_names = teacher_names[0:len(teacher_names)-1]+']'
+    teacher_sections = teacher_sections[0:len(teacher_sections)-1]+']'
+
+    to_write += teacher_names + '\n' + teacher_sections + '\n\n'
+
+# clear out old var
+with open('../javascript/teachers.js') as work_file:
+    data = ""
+    for line in work_file:
+        data += line
+
+remove_index = max(data.index(special_remove) - 2, 0)
+
+data = data[remove_index:]
+data = to_write + data
+
+with open('../javascript/teachers.js', 'w+') as work_file:
+    work_file.write(data)

@@ -119,6 +119,8 @@ body {
   position: absolute;
   background-color: black;
   margin-top: 0vh;
+
+  cursor: pointer;
 }
 
 .dropdown-item {

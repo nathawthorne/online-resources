@@ -1,16 +1,10 @@
-var text_files = {"menu_text":{'en': {'prek': 'Pre-K', 'K': 'Kindergarten', 'first': 'First Grade', 'second': 'Second Grade', 'third': 'Third Grade', 'fourth': 'Fourth Grade', 'fifth': 'Fifth Grade', 'specials': 'Specials'}, 'es': {'prek': 'Pre-K', 'K': 'Kinder', 'first': 'Primer Grado', 'second': 'Segundo Grado', 'third': 'Tercer Grado', 'fourth': 'Cuarto Grado', 'fifth': 'Quinto Grado', 'specials': 'Especiales'}}}
-
-
-
-//##
-
 let prek_teachers=["Mr. Aguilera","Ms. Lingow","Mr. Cocco","Ms. Johnson"]
 let prek_section=["PK3","PKA","PKB","PKC"]
 
 let kinder_teachers=["Ms. Medrano","Ms. Hernandez","Ms. Russell"]
 let kinder_section=["KA","KB","KC"]
 
-let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Gutierrez"]
+let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Stewart"]
 let first_section=["1A","1B","1C"]
 
 let second_teachers=["Ms. Figueroa","Ms. Hortelanos","Ms. Nolan"]
@@ -27,6 +21,17 @@ let fifth_section=["5A","5B","5C"]
 
 let specials_teachers=["Ms. Manning","Mr. Morrow","Ms. Bishop","Ms. Valero","Ms. Cooper"]
 let specials_section=["PE","Art","Music","TAG","Library"]
+
+let sped_teachers=["Mr. Nickson","Ms. Pooler","Ms. Beaver","Ms. Rios","Ms. Parra","Ms. White"]
+let sped_section=["SPED","PPCDA","PPCDB","Inclusion","Dyslexia","Speech"]
+
+
+
+//##
+
+var text_files = {"menu_text":{'en': {'prek': 'Pre-K', 'K': 'Kindergarten', 'first': 'First Grade', 'second': 'Second Grade', 'third': 'Third Grade', 'fourth': 'Fourth Grade', 'fifth': 'Fifth Grade', 'specials': 'Specials'}, 'es': {'prek': 'Pre-K', 'K': 'Kinder', 'first': 'Primer Grado', 'second': 'Segundo Grado', 'third': 'Tercer Grado', 'fourth': 'Cuarto Grado', 'fifth': 'Quinto Grado', 'specials': 'Especiales'}}}
+
+
 
 
 function write_teacher(name, section){
@@ -156,6 +161,9 @@ $(document).ready(function(){
 		$('#specials').click(function(){
 			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=specials';
 		});
+		$('#sped').click(function(){
+			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=sped';
+		});
 
 
 
@@ -218,6 +226,13 @@ $(document).ready(function(){
 		text = ""
 		for (var teacher_id = 0; teacher_id < specials_teachers.length; teacher_id++) {
   		text += write_teacher(specials_teachers[teacher_id], specials_section[teacher_id]);
+		}
+		$('.teacher_container').html(text);
+	}
+	else if (grade == 'sped'){
+		text = ""
+		for (var teacher_id = 0; teacher_id < sped_teachers.length; teacher_id++) {
+  		text += write_teacher(sped_teachers[teacher_id], sped_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);
 	}
