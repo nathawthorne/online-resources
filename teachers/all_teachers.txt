@@ -26,9 +26,9 @@ Ms. Bishop	Music	rdbishop@dallasisd.org
 Ms. Valero	TAG	acolon@dallasisd.org
 Ms. Cooper	Library	cocooper@dallasisd.org
 Mr. Nickson	FLS	snickson@dallasisd.org
+Ms. Fisher	FLS	chrfisher@dallasisd.org
 Ms. Pooler	PPCDA	tpooler@dallasisd.org
 Ms. Beaver	PPCDB	lbeaver@dallasisd.org
 Ms. Rios	Inclusion	grrios@dallasisd.org
 Ms. Parra	Dyslexia	cperea@dallasisd.org
 Ms. White	Speech	cwhite@dallasisd.org
-Ms. Fisher	FLS	chrfisher@dallasisd.org
