@@ -39,7 +39,6 @@ var teacher_work = {
 
 //##
 var text_files = {
-"main_page":{'image': 'imgs/anfernandez.jpg', 'text': {'en': 'Hello everyone!', 'es': 'Hola todos!'}, 'links': ['www.google.com', 'www.bing.com'], 'links_text': ['Google', 'Bing']},
 "menu_text":{'en': {'prek': 'Pre-K', 'K': 'Kindergarten', 'first': 'First Grade', 'second': 'Second Grade', 'third': 'Third Grade', 'fourth': 'Fourth Grade', 'fifth': 'Fifth Grade', 'specials': 'Specials'}, 'es': {'prek': 'Pre-K', 'K': 'Kinder', 'first': 'Primer Grado', 'second': 'Segundo Grado', 'third': 'Tercer Grado', 'fourth': 'Cuarto Grado', 'fifth': 'Quinto Grado', 'specials': 'Especiales'}}}
 
 

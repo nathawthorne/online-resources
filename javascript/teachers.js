@@ -23,7 +23,7 @@ let specials_teachers=["Ms. Manning","Mr. Morrow","Ms. Bishop","Ms. Valero","Ms.
 let specials_section=["PE","Art","Music","TAG","Library"]
 
 let sped_teachers=["Mr. Nickson","Ms. Pooler","Ms. Beaver","Ms. Rios","Ms. Parra","Ms. White","Ms. Fisher"]
-let sped_section=["SPED","PPCDA","PPCDB","Inclusion","Dyslexia","Speech","FLS"]
+let sped_section=["FLS","PPCDA","PPCDB","Inclusion","Dyslexia","Speech","FLS"]
 
 
 
