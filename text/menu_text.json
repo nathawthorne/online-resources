@@ -1,22 +1,14 @@
 {
 	"en":{
-		"prek":"Pre-K",
-		"K":"Kindergarten",
-		"first":"First Grade",
-		"second":"Second Grade",
-		"third":"Third Grade",
-		"fourth":"Fourth Grade",
-		"fifth":"Fifth Grade",
-		"specials":"Specials"
+		"buster":"Weekly Boredom Buster",
+		"news":"Weekly News Letter",
+		"grades":"Weekly Work",
+		"online":"Remote Learning FAQ"
 	},
 	"es":{
-		"prek":"Pre-K",
-		"K":"Kinder",
-		"first":"Primer Grado",
-		"second":"Segundo Grado",
-		"third":"Tercer Grado",
-		"fourth":"Cuarto Grado",
-		"fifth":"Quinto Grado",
-		"specials":"Especiales"
+		"buster":"Reto Semanal Para no Aburrirse",
+		"news":"Noticiero Semanal",
+		"grades":"Trabajo de la Semana",
+		"online":"Ayuda para Aprender de Casa"
 	}
 }

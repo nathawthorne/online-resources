@@ -105,6 +105,7 @@ body {
   display: inline-block;
   cursor: pointer;
   margin-left: 2.5vw;
+  margin-right: 2.5vw;
 }
 
 .bar1, .bar2, .bar3 {

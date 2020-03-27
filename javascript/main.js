@@ -1,9 +1,8 @@
 var text_files = {
-"main_page":{'image': 'imgs/anfernandez.jpg', 'text': {'en': 'Hello Hawthorne Families!<br /><br />Here are some important links for you to use at home to support your students, every week starting on Monday March 23rd, we will add more activities and ideas.', 'es': 'Hola Familias de Hawthorne,<br /><br />En esta pagina, cada semana empezando el lunes 23 de marzo, pondremos ideas y actividades que ustedes pueden usar para ayudar a sus hijos en casa.'},
-'links_title': {'en': 'Useful Resources', 'es': 'Recursos Utiles'}, 'food_bank_links': ['https://www.citysquare.org/food', 'https://www.ivcompassion.org/', 'https://goodstreetbaptistchurch.org/social-service-center-2/'], 'food_bank_links_text': ['City Square Food Pantry', 'Inspired Vision Compassion Center', 'Good Street Baptist Church'], 'food_bank_extra_info':{'en':['Tuesday - Friday 9:00 am - 1 pm,<br />1610 S Malcolm X Blvd, Bldg 350, Dallas, TX 75226<br />(214) 823-8710' ,'Monday - Friday 9:30 am - 5:00 pm, <br/>2019 N. Masters, Dallas, Texas 75217, <br/>P:(972) 971-8879' ,'Monday, Tuesday, Friday 10:00 am - 12:00 pm,<br />Wednesday 12:00 pm - 2:00 pm,<br />Thursday 10:00 am - 2:00 pm,<br />3126 Hatcher Street, Dallas, TX 75215<br />(214) 421-8208'],
-'es':['Martes - Viernes 9:00 am - 1 pm,<br />1610 S Malcolm X Blvd, Bldg 350, Dallas, TX 75226<br />(214) 823-8710' ,'Lunes - Viernes 9:30 am - 5:00 pm, <br/>2019 N. Masters, Dallas, Texas 75217, <br/>P:(972) 971-8879','Lunes, Martes, Viernes 10:00 am - 12:00 pm,<br /> Miercoles 12:00 pm - 2:00 pm,<br />Jueves 10:00 am - 2:00 pm,<br />3126 Hatcher Street, Dallas, TX 75215<br />(214) 421-8208']},'shelter_links':['https://www.familygateway.org/', 'https://www.edenoutreach.com/contactus.htm', 'https://hccdallas.org/'],'shelter_text':['Family Gateway', 'Eden Outreach', 'Housing Crisis Center'],'shelter_extra_info':['711 S. St. Paul St. Dallas, TX 75201<br />(214) 823-4500', '3110 Metropolitan Ave, Dallas, Texas 75215<br />(214) 421-5894', '4210 Junius Street, Dallas, TX 75246<br />(214) 828-4244']},
-"menu_text":{'en': {'prek': 'Pre-K', 'K': 'Kindergarten', 'first': 'First Grade', 'second': 'Second Grade', 'third': 'Third Grade', 'fourth': 'Fourth Grade', 'fifth': 'Fifth Grade', 'specials': 'Specials'}, 'es': {'prek': 'Pre-K', 'K': 'Kinder', 'first': 'Primer Grado', 'second': 'Segundo Grado', 'third': 'Tercer Grado', 'fourth': 'Cuarto Grado', 'fifth': 'Quinto Grado', 'specials': 'Especiales'}}}
+"main_page":{'image': 'imgs/anfernandez.jpg', 'text': {'en': 'Hello Hawthorne Families!<br /><br />Here are some important links for you to use at home to support your students, every week starting on Monday March 23rd, we will add more activities and ideas.', 'es': 'Hola Familias de Hawthorne,<br /><br />En esta pagina, cada semana empezando el lunes 23 de marzo, pondremos ideas y actividades que ustedes pueden usar para ayudar a sus hijos en casa.'}, 'links_title': {'en': 'Useful Resources', 'es': 'Recursos Utiles'}, 'food_bank_links': ['https://www.citysquare.org/food', 'https://www.ivcompassion.org/', 'https://goodstreetbaptistchurch.org/social-service-center-2/'], 'food_bank_links_text': ['City Square Food Pantry', 'Inspired Vision Compassion Center', 'Good Street Baptist Church'], 'food_bank_extra_info': {'en': ['Tuesday - Friday 9:00 am - 1 pm,<br />1610 S Malcolm X Blvd, Bldg 350, Dallas, TX 75226<br />(214) 823-8710', 'Monday - Friday 9:30 am - 5:00 pm,<br/>2019 N. Masters, Dallas, Texas 75217, <br/>P:(972) 971-8879', 'Monday, Tuesday, Friday 10:00 am - 12:00 pm,<br />Wednesday 12:00 pm - 2:00 pm,<br />Thursday 10:00 am - 2:00 pm,<br />3126 Hatcher Street, Dallas, TX 75215<br />(214) 421-8208'], 'es': ['Martes - Viernes 9:00 am - 1 pm,<br />1610 S Malcolm X Blvd, Bldg 350, Dallas, TX 75226<br />(214) 823-8710', 'Lunes - Viernes 9:30 am - 5:00 pm, <br/>2019 N. Masters, Dallas, Texas 75217, <br/>P:(972) 971-8879', 'Lunes, Martes, Viernes 10:00 am - 12:00 pm,<br /> Miercoles 12:00 pm - 2:00 pm,<br />Jueves 10:00 am - 2:00 pm,<br />3126 Hatcher Street, Dallas, TX 75215<br />(214) 421-8208']}, 'shelter_links': ['https://www.familygateway.org/', 'https://www.edenoutreach.com/contactus.htm', 'https://hccdallas.org/'], 'shelter_text': ['Family Gateway', 'Eden Outreach', 'Housing Crisis Center'], 'shelter_extra_info': ['711 S. St. Paul St. Dallas,TX 75201<br />(214) 823-4500', '3110 Metropolitan Ave, Dallas, Texas 75215<br />(214) 421-5894', '4210 Junius Street, Dallas, TX 75246<br />(214) 828-4244']},
+"menu_text":{'en': {'buster': 'Weekly Boredom Buster', 'news': 'Weekly News Letter', 'grades': 'Weekly Work', 'online': 'Remote Learning FAQ'}, 'es': {'buster': 'Reto Semanal Para no Aburrirse', 'news': 'Noticiero Semanal', 'grades': 'Trabajo de la Semana', 'online': 'Ayuda para Aprender de Casa'}}}
 
+//##
 
 
 
@@ -38,14 +37,10 @@ function setup_page(language){
 	}
 
 	// Setting up Menu
-	$('#prek').html(text_files['menu_text'][language]['prek']);
-	$('#K').html(text_files['menu_text'][language]['K']);
-	$('#first').html(text_files['menu_text'][language]['first']);
-	$('#second').html(text_files['menu_text'][language]['second']);
-	$('#third').html(text_files['menu_text'][language]['third']);
-	$('#fourth').html(text_files['menu_text'][language]['fourth']);
-	$('#fifth').html(text_files['menu_text'][language]['fifth']);
-	$('#specials').html(text_files['menu_text'][language]['specials']);
+	$('#buster').html(text_files['menu_text'][language]['buster']);
+	$('#news').html(text_files['menu_text'][language]['news']);
+	$('#grades').html(text_files['menu_text'][language]['grades']);
+	$('#online').html(text_files['menu_text'][language]['online']);
 
 	// setting up main content
 	$('.main_image').html('<img src="'+text_files['main_page']['image']+'">');
@@ -93,7 +88,6 @@ function setup_page(language){
 		to_write += extra+'</li><br>'
 	}
 	to_write += "</ul>"
-	console.log(to_write)
 	$('.shelter').html(to_write);
 }
 
@@ -150,48 +144,17 @@ $(document).ready(function(){
 
 
 
-	$('#prek').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=prek';
+	$('#buster').click(function(){
+		window.location.href = remove_page('/')+ 'buster.html?lang='+lang;
 	});
-	$('#K').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=K';
-	});
-	$('#first').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=first';
-	});
-	$('#second').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=second';
-	});
-	$('#third').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=third';
-	});
-	$('#fourth').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=fourth';
-	});
-	$('#fifth').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=fifth';
-	});
-	$('#specials').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=specials';
-	});
-	$('#sped').click(function(){
-		window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=sped';
+	$('#news').click(function(){
+		window.location.href = remove_page('/')+ 'news_letter.html?lang='+lang;
 	});
 
-	// Grade code
-	$(".grade").hover(function(){
-  	$(this).css("opacity", "0.5");
-		$(this).css("cursor", "pointer");
-  }, function(){
-  	$(this).css("opacity", "1");
-		$(this).css("cursor", "auto");
+	$('#grades').click(function(){
+		window.location.href = remove_page('/')+ 'grade.html?lang='+lang;
 	});
-
-	$(".grade").click(function(){
-		grade_clicked = $(this).attr('id');
-
-		lang = extract_var('lang')
-
-		window.location.href=remove_page('/')+'teachers.html?lang='+lang+'?grade='+grade_clicked;
+	$('#online').click(function(){
+		window.location.href = remove_page('/')+ 'faq.html?lang='+lang;
 	});
 });

@@ -1,0 +1,67 @@
+
+.content {
+	max-width: 100%;
+
+	padding: 10vw;
+  position: absolute;
+  top: 15%;
+  height: 85vh;
+
+  text-align: center;
+  color: black;
+
+	padding: 4vw;
+}
+
+.content p{
+  font-size: 5vw;
+}
+
+.main_text {
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
+
+  top: 25vh;
+
+	display: inline-block;
+	margin-bottom: 3vh;
+}
+
+.grades {
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+  justify-content: space-between;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+
+	margin-top: 1vh;
+}
+
+.grade {
+	height:13vh;
+	float: left;
+  clear: left;
+	background-color: rgba(255,255,255,0.9);
+	width: 100%;
+	border-radius: 10px;
+
+	font-size: 2vw;
+
+	display: flex;
+  align-items: center;
+  justify-content: center;
+
+	color: black;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+
+	margin-top: 1vh;
+
+}
+
+.grade:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}

@@ -1,15 +1,11 @@
 import os
+import json
 
-grade_links = {'prek':[],
-                'kinder': [],
-                'first':["https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit?usp=sharing"],
-                'second':["https://docs.google.com/document/d/1gz5-G9NpoOVN7uWfamQkxEBBtR1H8ZOftVTBgIPJs_I/edit?usp=sharing", "https://docs.google.com/document/d/1nmIfFq42A_8TOdzUNW3KRLqcDVHkqcpYLH0SBMZHFg8/edit?usp=sharing"],
-                'third':["https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit?usp=sharing"],
-                'fourth':["https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit?usp=sharing"],
-                'fifth':["https://docs.google.com/document/d/10kFarbKZ1aWfo9KLcI1U9V6N0BL7KvdX2w-u9Em6GDQ/edit?usp=sharing"],
-                'specials':[],
-                'sped':[]
-                 }
+json_file = ''
+for line in open('../text/grade_level_lesson_plans.json'):
+    json_file+=line
+
+grade_links = json.loads(json_file)
 
 special_remove = '//##'
 by_grade = dict({'prek':[],

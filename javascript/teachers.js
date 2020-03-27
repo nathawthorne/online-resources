@@ -1,10 +1,10 @@
-let prek_teachers=["Mr. Aguilera","Ms. Lingow","Mr. Cocco","Ms. Johnson"]
+let prek_teachers=["Mr. Aguilera","Ms. Lingow","Mr. Cocco","Ms. Stewart"]
 let prek_section=["PK3","PKA","PKB","PKC"]
 
 let kinder_teachers=["Ms. Medrano","Ms. Hernandez","Ms. Russell"]
 let kinder_section=["KA","KB","KC"]
 
-let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Stewart"]
+let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Gutierrez"]
 let first_section=["1A","1B","1C"]
 
 let second_teachers=["Ms. Figueroa","Ms. Hortelanos","Ms. Nolan"]
@@ -29,7 +29,8 @@ let sped_section=["FLS","FLS","PPCDA","PPCDB","Inclusion","Dyslexia","Speech"]
 
 //##
 
-var text_files = {"menu_text":{'en': {'prek': 'Pre-K', 'K': 'Kindergarten', 'first': 'First Grade', 'second': 'Second Grade', 'third': 'Third Grade', 'fourth': 'Fourth Grade', 'fifth': 'Fifth Grade', 'specials': 'Specials'}, 'es': {'prek': 'Pre-K', 'K': 'Kinder', 'first': 'Primer Grado', 'second': 'Segundo Grado', 'third': 'Tercer Grado', 'fourth': 'Cuarto Grado', 'fifth': 'Quinto Grado', 'specials': 'Especiales'}}}
+var text_files = {
+"menu_text":{'en': {'buster': 'Weekly Boredom Buster', 'news': 'Weekly News Letter', 'grades': 'Weekly Work', 'online': 'Remote Learning FAQ'}, 'es': {'buster': 'Reto Semanal Para no Aburrirse', 'news': 'Noticiero Semanal', 'grades': 'Trabajo de la Semana', 'online': 'Ayuda para Aprender de Casa'}}}
 
 
 
@@ -74,96 +75,78 @@ function setup_page(language){
 	}
 
 	// Setting up Menu
-	$('#prek').html(text_files['menu_text'][language]['prek']);
-	$('#K').html(text_files['menu_text'][language]['K']);
-	$('#first').html(text_files['menu_text'][language]['first']);
-	$('#second').html(text_files['menu_text'][language]['second']);
-	$('#third').html(text_files['menu_text'][language]['third']);
-	$('#fourth').html(text_files['menu_text'][language]['fourth']);
-	$('#fifth').html(text_files['menu_text'][language]['fifth']);
-	$('#specials').html(text_files['menu_text'][language]['specials']);
+	$('#buster').html(text_files['menu_text'][language]['buster']);
+	$('#news').html(text_files['menu_text'][language]['news']);
+	$('#grades').html(text_files['menu_text'][language]['grades']);
+	$('#online').html(text_files['menu_text'][language]['online']);
 }
 
 $(document).ready(function(){
 	var curr_url = window.location.href
-	if(!curr_url.includes('l?lang=')){
-		index_html = curr_url.indexOf('.html') + 5;
-		base = curr_url.substring(0,index_html);
-		vars = curr_url.substring(index_html, curr_url.length);
-		if(vars.startsWith('?lang=')){
-			vars = vars.substring(8,vars.length);
-		}
-		window.location.href=base+'?lang=en'+vars
+	if(!(curr_url.includes('?lang='))){
+		curr_url = window.location.href + '?lang=en';
+		window.location.href = curr_url;
 	}
 	var lang = extract_var('lang');
 	setup_page(lang);
 
 
-		$(".logo").click(function(){
-			grade_clicked = $(this).attr('id');
+	$(".logo").click(function(){
+		grade_clicked = $(this).attr('id');
 
-			window.location.href='https://www.dallasisd.org/hawthorne';
-		});
-		$(".school_name").click(function(){
+		window.location.href='https://www.dallasisd.org/hawthorne';
+	});
+	$(".school_name").click(function(){
+		grade_clicked = $(this).attr('id');
 
-			window.location.href=remove_page('/')+'index.html?lang='+lang;
-		});
+		window.location.href=remove_page('/')+'index.html?lang='+lang;
+	});
 
-		$(".lang").click(function(){
-			lang = extract_var('lang')
-			if(lang == 'en'){
-				new_lang = 'es';
-			} else {
-				new_lang = 'en';
-			}
-			curr_url = window.location.href
-			base = remove_page('?lang=')
-			base = base.substring(0,base.length-1)
-			vars = curr_url.substring(base.length,curr_url.length);
-			if(vars.startsWith('?lang=')){
-				vars = vars.substring(8,vars.length);
-			}
-			window.location.href=base+'?lang='+new_lang+vars
-		});
+	$(".lang").click(function(){
+		lang = extract_var('lang')
+		if(lang == 'en'){
+			new_lang = 'es';
+		} else {
+			new_lang = 'en';
+		}
+		curr_url = window.location.href
+		base = remove_page('?lang=')
+		base = base.substring(0,base.length-1)
+		vars = curr_url.substring(base.length,curr_url.length);
+		if(vars.startsWith('?lang=')){
+			vars = vars.substring(8,vars.length);
+		}
+		window.location.href=base+'?lang='+new_lang+vars
+	});
 
-		var timer;
-		$(".menu_button").hover(function(){
-			$(this).css('display','auto');
-			clearTimeout(timer);
-			$('.nav').removeClass('invisible');
-		}, function(){
-			timer = setTimeout(function() {
-	        $('.nav').addClass('invisible');
-	    }, 100);
-		});
+	var timer;
+	$(".menu_button").hover(function(){
+		$(this).css('display','auto');
+		clearTimeout(timer);
+		$('.nav').removeClass('invisible');
+	}, function(){
+		timer = setTimeout(function() {
+        $('.nav').addClass('invisible');
+    }, 100);
+	});
 
-		$('#prek').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=prek';
-		});
-		$('#K').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=K';
-		});
-		$('#first').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=first';
-		});
-		$('#second').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=second';
-		});
-		$('#third').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=third';
-		});
-		$('#fourth').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=fourth';
-		});
-		$('#fifth').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=fifth';
-		});
-		$('#specials').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=specials';
-		});
-		$('#sped').click(function(){
-			window.location.href = remove_page('/')+ 'teachers.html?lang='+lang+'?grade=sped';
-		});
+
+
+
+
+	$('#buster').click(function(){
+		window.location.href = remove_page('/')+ 'buster.html?lang='+lang;
+	});
+	$('#news').click(function(){
+		window.location.href = remove_page('/')+ 'news_letter.html?lang='+lang;
+	});
+
+	$('#grades').click(function(){
+		window.location.href = remove_page('/')+ 'grade.html?lang='+lang;
+	});
+	$('#online').click(function(){
+		window.location.href = remove_page('/')+ 'faq.html?lang='+lang;
+	});
 
 
 
@@ -175,7 +158,7 @@ $(document).ready(function(){
 
 	if (grade == 'prek'){
 		text = ""
-		for (var teacher_id = 0; teacher_id < kinder_teachers.length; teacher_id++) {
+		for (var teacher_id = 0; teacher_id < prek_teachers.length; teacher_id++) {
   		text += write_teacher(prek_teachers[teacher_id], prek_section[teacher_id]);
 		}
 		$('.teacher_container').html(text);

@@ -1,0 +1,22 @@
+
+.content {
+	max-width: 100%;
+
+	padding: 10vw;
+  position: absolute;
+  top: 15%;
+  height: 85vh;
+
+  text-align: center;
+  color: black;
+
+	padding: 4vw;
+}
+
+.content p{
+  font-size: 5vw;
+}
+
+img {
+	max-width: 100%;
+}
