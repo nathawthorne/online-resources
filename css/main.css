@@ -18,10 +18,12 @@
   height: 85vh;
   text-align: center;
   color: black;
+
+	padding: 1vw;
 }
 
 .content p{
-  font-size: 4vh;
+  font-size: 3vw;
 }
 
 .main_image {
