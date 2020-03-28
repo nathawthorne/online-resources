@@ -78,7 +78,7 @@ function setup_page(language){
 	$('#grades').html(text_files['menu_text'][language]['grades']);
 	$('#online').html(text_files['menu_text'][language]['online']);
 	if(language == 'en'){
-		$('#counsel').html('Counselling Services');
+		$('#counsel').html('Counseling Services');
 	}else{
 		$('#counsel').html('Servicios de Consejeria');
 	}
