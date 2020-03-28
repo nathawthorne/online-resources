@@ -66,15 +66,13 @@ with open('all_teachers.txt') as teachers_list:
 
         teacher_json = '{\n"teacher_name":"'+teacher+'",\n"grade":"'+section+'",\n"email":"'+email+'"'
         if len(relevant_content) > 0:
-            teacher_json += ',\n"work":['
+            teacher_json += ',\n"work":{'
 
-            for link_id, link in enumerate(relevant_content):
-                if link_id == 0:
-                    teacher_json += '"text__Week of 3/30 to 4/3 (English)",\n"link__'+link+'",\n'
-                else:
-                    teacher_json += '"text__Semana de 3/30 a 4/3 (Espa&#xf1;ol)",\n"link__'+link+'",\n'
 
-            teacher_json = teacher_json.strip()[0:len(teacher_json)-2]+']'
+            teacher_json += '"en":["text__Week of 3/30 to 4/3",\n"link__'+relevant_content[0]+'"],\n'
+            teacher_json += '"es":["text__Semana de 3/30 a 4/3",\n"link__'+relevant_content[0]+'"]\n'
+
+            teacher_json = teacher_json.strip()[0:len(teacher_json)-1]+'}'
         teacher_json += '\n}'
         with open(folder_name+'/'+folder_name+'.json','w') as teacher_file:
             teacher_file.write(teacher_json)

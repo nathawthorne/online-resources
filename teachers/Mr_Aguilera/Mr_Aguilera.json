@@ -2,6 +2,8 @@
 "teacher_name":"Mr. Aguilera",
 "grade":"PK3",
 "email":"joaguilera@dallasisd.org",
-"work":["text__Week of 3/30 to 4/3 (English)",
-"link__https://docs.google.com/document/d/1s22KmY9PyPFuAW5dpmcuBOb4AFzLgWPEW8_spmWD1xo/edit"]
+"work":{"en":["text__Week of 3/30 to 4/3",
+"link__https://docs.google.com/document/d/1s22KmY9PyPFuAW5dpmcuBOb4AFzLgWPEW8_spmWD1xo/edit"],
+"es":["text__Semana de 3/30 a 4/3",
+"link__https://docs.google.com/document/d/1s22KmY9PyPFuAW5dpmcuBOb4AFzLgWPEW8_spmWD1xo/edit"]}
 }
