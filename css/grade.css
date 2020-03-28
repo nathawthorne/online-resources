@@ -1,7 +1,7 @@
 
 .content {
 	max-width: 100%;
-
+	width: 100%;
 	padding: 10vw;
   position: absolute;
   top: 15%;
@@ -30,7 +30,6 @@
 .grades {
 	position: absolute;
 	top: 0%;
-	height: 100%;
 	width: 100%;
   justify-content: space-between;
 	padding-top: 1vh;

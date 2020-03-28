@@ -3,7 +3,7 @@ import json
 
 
 
-relevant_files = set(['menu_text.json', 'main_page.json'])
+relevant_files = set(['menu_text.json', 'main_page.json', 'important_info.json'])
 file_to_write = 'javascript/main.js'
 
 

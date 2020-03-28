@@ -115,6 +115,10 @@ body {
   margin: 1vw 0;
 }
 
+.menu_button:hover{
+  cursor: pointer;
+}
+
 .nav {
   top: 15vh;
   left:2.5vw;
