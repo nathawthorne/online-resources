@@ -7,7 +7,7 @@ let kinder_section=["KA","KB","KC"]
 let first_teachers=["Ms. Neil","Ms. Escobedo","Ms. Gutierrez"]
 let first_section=["1A","1B","1C"]
 
-let second_teachers=["Ms. Figueroa","Ms. Hortelanos","Ms. Nolan"]
+let second_teachers=["Ms. Figueroa","Ms. Hortelano","Ms. Nolan"]
 let second_section=["2A","2B","2C"]
 
 let third_teachers=["Ms. Vaquerano","Ms. Gonzalez","Mr. Galvan"]

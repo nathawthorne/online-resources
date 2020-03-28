@@ -9,7 +9,7 @@ Ms. Neil	1A	mneil@dallasisd.org
 Ms. Escobedo	1B	vescobedo@dallasisd.org
 Ms. Gutierrez	1C	bragutierrez@dallasisd.org
 Ms. Figueroa	2A	dfreytes@dallasisd.org
-Ms. Hortelanos	2B	mhortelanogarcia@dallasisd.org
+Ms. Hortelano	2B	mhortelanogarcia@dallasisd.org
 Ms. Nolan	2C	chrodgers@dallasisd.org
 Ms. Vaquerano	3A	jvaqerano@dallasisd.org
 Ms. Gonzalez	3B	mcosme@dallasisd.org
