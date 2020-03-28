@@ -5,14 +5,16 @@
 								"How do I connect to SeeSaw?",
 								"How do I get to KhanAcademy?",
 								"How do I access my CleverAccount?",
-								"How do I get to BrainPop?"
+								"How do I get to BrainPop?",
+								"How do I access Education Galaxy?"
 								],
 		"answers":["link__https://docs.google.com/presentation/d/1tR5U7ogiej62-m4v7256xhfLTEDmfKpmiFpiqLAQuLY/edit#slide=id.p",
 							 "link__https://m.youtube.com/channel/UCL23Z0i9lKBsHNSe7KvKkzw?reload=9",
 							 "link__https://web.seesaw.me/remote-learning-for-families",
 							 "link__https://www.khanacademy.org/",
 							 "link__https://clever.com/in/dallasisd",
-							 "link__https://www.brainpop.com/"
+							 "link__https://www.brainpop.com/",
+							 "link__https://educationgalaxy.com/"
 						 	]
 	},
 	"es":{
@@ -21,14 +23,16 @@
 								"Como me conecto a SeeSaw?",
 								"Como me conecto KhanAcademy?",
 								"Como puedo accesar a mi CleverAccount?",
-								"Commo me conecto a BrainPop?"
+								"Como me conecto a BrainPop?",
+								"Como puedo accesar a EducationGalaxy?"
 								],
 		"answers":["link__https://docs.google.com/presentation/d/1tR5U7ogiej62-m4v7256xhfLTEDmfKpmiFpiqLAQuLY/edit#slide=id.p",
 							 "link__https://m.youtube.com/channel/UCL23Z0i9lKBsHNSe7KvKkzw?reload=9",
 							 "link__https://web.seesaw.me/remote-learning-for-families",
 							 "link__https://www.khanacademy.org/",
 							 "link__https://clever.com/in/dallasisd",
-							 "link__https://www.brainpop.com/"
+							 "link__https://www.brainpop.com/",
+							 "link__https://educationgalaxy.com/"
 						 	]
 	}
 }

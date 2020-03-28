@@ -46,6 +46,11 @@ function setup_page(language){
 	$('#news').html(text_files['menu_text'][language]['news']);
 	$('#grades').html(text_files['menu_text'][language]['grades']);
 	$('#online').html(text_files['menu_text'][language]['online']);
+	if(language == 'en'){
+		$('#counsel').html('Counselling Services');
+	}else{
+		$('#counsel').html('Servicios de Consejeria');
+	}
 
 	// setting up main content
 	$('.main_image').html('<img src="'+text_files['main_page']['image']+'">');
@@ -164,6 +169,9 @@ $(document).ready(function(){
 	});
 	$('#online').click(function(){
 		window.location.href = remove_page('/')+ 'faq.html?lang='+lang;
+	});
+	$('#counsel').click(function(){
+		window.location.href = "https://sites.google.com/dallasisd.org/kariskounselingkorner/home";
 	});
 
 	$('.important').click(function(){

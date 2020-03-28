@@ -7,14 +7,16 @@ var text_files = {
 								"How do I connect to SeeSaw?",
 								"How do I get to KhanAcademy?",
 								"How do I access my CleverAccount?",
-								"How do I get to BrainPop?"
+								"How do I get to BrainPop?",
+								"How do I access Education Galaxy?"
 								],
 		"answers":["link__https://docs.google.com/presentation/d/1tR5U7ogiej62-m4v7256xhfLTEDmfKpmiFpiqLAQuLY/edit#slide=id.p",
 							 "link__https://m.youtube.com/channel/UCL23Z0i9lKBsHNSe7KvKkzw?reload=9",
 							 "link__https://web.seesaw.me/remote-learning-for-families",
 							 "link__https://www.khanacademy.org/",
 							 "link__https://clever.com/in/dallasisd",
-							 "link__https://www.brainpop.com/"
+							 "link__https://www.brainpop.com/",
+							 "link__https://educationgalaxy.com/"
 						 	]
 	},
 	"es":{
@@ -23,17 +25,20 @@ var text_files = {
 								"Como me conecto a SeeSaw?",
 								"Como me conecto KhanAcademy?",
 								"Como puedo accesar a mi CleverAccount?",
-								"Commo me conecto a BrainPop?"
+								"Como me conecto a BrainPop?",
+								"Como puedo accesar a EducationGalaxy?"
 								],
 		"answers":["link__https://docs.google.com/presentation/d/1tR5U7ogiej62-m4v7256xhfLTEDmfKpmiFpiqLAQuLY/edit#slide=id.p",
 							 "link__https://m.youtube.com/channel/UCL23Z0i9lKBsHNSe7KvKkzw?reload=9",
 							 "link__https://web.seesaw.me/remote-learning-for-families",
 							 "link__https://www.khanacademy.org/",
 							 "link__https://clever.com/in/dallasisd",
-							 "link__https://www.brainpop.com/"
+							 "link__https://www.brainpop.com/",
+							 "link__https://educationgalaxy.com/"
 						 	]
 	}
 }
+
 
 }
 
@@ -72,6 +77,11 @@ function setup_page(language){
 	$('#news').html(text_files['menu_text'][language]['news']);
 	$('#grades').html(text_files['menu_text'][language]['grades']);
 	$('#online').html(text_files['menu_text'][language]['online']);
+	if(language == 'en'){
+		$('#counsel').html('Counselling Services');
+	}else{
+		$('#counsel').html('Servicios de Consejeria');
+	}
 
 
 	var special_text = 'text__';
@@ -182,5 +192,8 @@ $(document).ready(function(){
 	});
 	$('#online').click(function(){
 		window.location.href = remove_page('/')+ 'faq.html?lang='+lang;
+	});
+	$('#counsel').click(function(){
+		window.location.href = "https://sites.google.com/dallasisd.org/kariskounselingkorner/home";
 	});
 });
