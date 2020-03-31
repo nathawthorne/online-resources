@@ -136,7 +136,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   color: white;
-  font-size: 3vw;
 }
 
 .dropdown-item:hover {
@@ -147,4 +146,17 @@ body {
 
 .invisible {
   display: none;
+}
+
+
+@media screen and (min-width: 601px) {
+  .dropdown-item {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown-item {
+    font-size: 5vw;;
+  }
 }
