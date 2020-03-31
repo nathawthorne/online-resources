@@ -136,6 +136,9 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   color: white;
+  border-top-color: white;
+  border-top-width: thin;
+  border-top-style: inset;
 }
 
 .dropdown-item:hover {
