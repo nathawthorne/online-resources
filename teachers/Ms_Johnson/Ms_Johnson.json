@@ -1,5 +1,9 @@
 {
 "teacher_name":"Ms. Johnson",
 "grade":"PKC",
-"email":"margjohns@dallasisd.org"
+"email":"margjohns@dallasisd.org",
+"work":{
+	"es":[],
+	"en":[]
+}
 }

@@ -1,6 +1,7 @@
 import os
 import json
 
+block = True
 json_file = ''
 for line in open('../text/grade_level_lesson_plans.json'):
     json_file+=line
@@ -56,7 +57,17 @@ with open('all_teachers.txt') as teachers_list:
             by_grade['specials'].append((teacher, section))
             grade = 'specials'
 
-        relevant_content = grade_links[grade]
+        week_name = grade_links["week_name"]
+        teacher_last_name = teacher.split(' ')[1].lower()
+
+        if teacher_last_name in grade_links['teacher']:
+            relevant_content = grade_links['teacher'][teacher_last_name]
+        elif section.lower() in grade_links['section']:
+            relevant_content = grade_links['section'][section.lower()]
+        elif grade in grade_links["grade"]:
+            relevant_content = grade_links['grade'][grade]
+        else:
+            relevant_content = []
 
         folder_name = teacher.replace('.','')
         folder_name = folder_name.replace(' ','_')
@@ -64,18 +75,24 @@ with open('all_teachers.txt') as teachers_list:
         if not os.path.isdir(folder_name):
             os.mkdir(folder_name)
 
-        teacher_json = '{\n"teacher_name":"'+teacher+'",\n"grade":"'+section+'",\n"email":"'+email+'"'
-        if len(relevant_content) > 0:
-            teacher_json += ',\n"work":{'
+        teacher_file_location = folder_name+'/'+folder_name+'.json'
+        json_file = ''
+        for line in open(teacher_file_location):
+            json_file+=line
 
+        old_teacher_json = json.loads(json_file)
 
-            teacher_json += '"en":["text__Week of 3/30 to 4/3",\n"link__'+relevant_content[0]+'"],\n'
-            teacher_json += '"es":["text__Semana de 3/30 a 4/3",\n"link__'+relevant_content[0]+'"]\n'
+        if len(relevant_content) > 0 and 'text__Week of '+week_name != old_teacher_json['work']['en'][0]:
+            print('WRITE')
+            new_week = ['text__Week of '+week_name,'link__'+relevant_content[0]]
 
-            teacher_json = teacher_json.strip()[0:len(teacher_json)-1]+'}'
-        teacher_json += '\n}'
-        with open(folder_name+'/'+folder_name+'.json','w') as teacher_file:
-            teacher_file.write(teacher_json)
+            old_teacher_json['work']['en'] = new_week + old_teacher_json['work']['en']
+
+            new_week = ['text__Semana de '+week_name,'link__'+relevant_content[0]]
+
+            old_teacher_json['work']['es'] = new_week + old_teacher_json['work']['es']
+        with open(teacher_file_location,'w') as teacher_file:
+            teacher_file.write(json.dumps(old_teacher_json))
 
 to_write = ''
 for key, value in by_grade.items():

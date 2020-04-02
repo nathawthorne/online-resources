@@ -1,9 +1,1 @@
-{
-"teacher_name":"Ms. Escobedo",
-"grade":"1B",
-"email":"vescobedo@dallasisd.org",
-"work":{"en":["text__Week of 3/30 to 4/3",
-"link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit"],
-"es":["text__Semana de 3/30 a 4/3",
-"link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit"]}
-}
+{"teacher_name": "Ms. Escobedo", "grade": "1B", "email": "vescobedo@dallasisd.org", "work": {"en": ["text__Week of 3/30 to 4/3", "link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit"], "es": ["text__Semana de 3/30 a 4/3", "link__https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit"]}}

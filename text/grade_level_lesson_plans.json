@@ -1,11 +1,21 @@
 {
-	"prek":["https://docs.google.com/document/d/1GQ0bnGo7vd1u1vFBpMM0Sr0hlPb__x9pc4W3QYjd7qU/edit?usp=sharing", ""],
-	"kinder":["https://docs.google.com/document/d/1Daf2Pn23Qyq5G6ja5os7yWdcJR8u1Eolj7eQIJavNzo/edit", ""],
-	"first":["https://docs.google.com/document/d/1QNALhcc3xsJtlQaYAuPsfkHnJeWCdBDDq26gbEcV_OM/edit", ""],
-	"second":["https://docs.google.com/document/d/1gz5-G9NpoOVN7uWfamQkxEBBtR1H8ZOftVTBgIPJs_I/edit", ""],
-	"third":["https://docs.google.com/document/d/1UImY-z3lM8xNzUQ7WPUu5v0x1eZi8GxPKrBTAjdh4DA/edit", ""],
-	"fourth":["https://docs.google.com/document/d/1kodYYcTlNS_WkWkEcrMpJcO2lUwB_aZ1uFGAEyAgopc/edit", ""],
-	"fifth":["https://docs.google.com/document/d/10kFarbKZ1aWfo9KLcI1U9V6N0BL7KvdX2w-u9Em6GDQ/edit", ""],
-	"specials":[],
-	"sped":[]
+	"week_name":"4/6 - 4/10",
+	"grade":{
+		"prek":["https://docs.google.com/document/d/1YGQ9IR5LthhRzXBXqZujwPXlLj1xQ68qqwvpVKkHYHs/edit?usp=sharing"],
+		"kinder":["https://docs.google.com/document/d/1iHOVYwyNmL3YXWBsqZ6RaTMkVVFdVS3Q3WTAxU74AA8/edit?usp=sharing"],
+		"third":["https://docs.google.com/document/d/1XZyl0R_G7LDPvzuUd8lvLPPS5Vu8_yiIb8eZ5pJ3foE/edit?usp=sharing"],
+		"fourth":["https://docs.google.com/document/d/1WlpavDCrI5cpOfMOTsPymaQpqO2pqK5dqFW4T_NnL4g/edit?usp=sharing"],
+		"fifth":["https://docs.google.com/document/d/1Xw-6Iw3Cuuprwhn1i7MJMMnRdgKQTULf8zDewcEfgLI/edit?usp=sharing"]
+	},
+	"teacher":{
+		"nolan":["https://docs.google.com/document/d/1ZVkL68YpwBgSULwwiqPpT2jbyDFfzwNZ2rS1Y6kJBuE/edit?usp=sharing"],
+		"figueroa":["https://docs.google.com/document/d/1yOCvHSF6JJ67sJ6vfNa9MJLqUcEZw9Z2MrqHe5xpjtA/edit?usp=sharing"],
+		"hortelano":["https://docs.google.com/document/d/1yOCvHSF6JJ67sJ6vfNa9MJLqUcEZw9Z2MrqHe5xpjtA/edit?usp=sharing"]
+	},
+	"section":{
+		"pe":["https://drive.google.com/file/d/1bEF7X7yv0XxJCoRFRtBO2D1smrI31Gqh/view"],
+		"music":["https://docs.google.com/presentation/d/1uo6WLNy9M8fyoTv21qg5SE6hihIYIp12j06Xwyd2itc/edit#slide=id.g7198180b24_0_4"],
+		"art":["https://drive.google.com/file/d/13W8tsL653bPO9GHStJg8mcZKJ_m2myPS/view"],
+		"library":["https://docs.google.com/document/d/1sBFdMEZNcy0oodeSpXgiMEvaUD1_bTCog-zoYbenl3I/edit"]
+	}
 }
