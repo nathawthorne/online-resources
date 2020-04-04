@@ -82,15 +82,16 @@ with open('all_teachers.txt') as teachers_list:
 
         old_teacher_json = json.loads(json_file)
 
-        if len(relevant_content) > 0 and 'text__Week of '+week_name != old_teacher_json['work']['en'][0]:
-            print('WRITE')
-            new_week = ['text__Week of '+week_name,'link__'+relevant_content[0]]
+        if len(relevant_content) > 0:
+            if len(old_teacher_json['work']['en']) == 0 or (len(old_teacher_json['work']['en']) > 0 and 'text__Week of '+week_name != old_teacher_json['work']['en'][0]):
+                print('WRITE')
+                new_week = ['text__Week of '+week_name,'link__'+relevant_content[0]]
 
-            old_teacher_json['work']['en'] = new_week + old_teacher_json['work']['en']
+                old_teacher_json['work']['en'] = new_week + old_teacher_json['work']['en']
 
-            new_week = ['text__Semana de '+week_name,'link__'+relevant_content[0]]
+                new_week = ['text__Semana de '+week_name,'link__'+relevant_content[0]]
 
-            old_teacher_json['work']['es'] = new_week + old_teacher_json['work']['es']
+                old_teacher_json['work']['es'] = new_week + old_teacher_json['work']['es']
         with open(teacher_file_location,'w') as teacher_file:
             teacher_file.write(json.dumps(old_teacher_json))
 
