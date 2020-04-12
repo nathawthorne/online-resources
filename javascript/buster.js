@@ -1,8 +1,8 @@
 var text_files = {
 "menu_text":{'en': {'buster': 'Weekly Boredom Buster', 'news': 'Weekly News Letter', 'grades': 'Weekly Work', 'online': 'Remote Learning FAQ'}, 'es': {'buster': 'Reto Semanal Para no Aburrirse', 'news': 'Noticiero Semanal', 'grades': 'Trabajo de la Semana', 'online': 'Ayuda para Aprender de Casa'}},
 "buster_images":{
-	"en":"imgs/busters/en_buster_406-410.png",
-	"es":"imgs/busters/es_buster_406-410.png"
+	"en":"imgs/busters/buster_413-417.png",
+	"es":"imgs/busters/buster_es_413-417.png"
 }
 }
 
