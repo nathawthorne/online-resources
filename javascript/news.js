@@ -1,8 +1,8 @@
 var text_files = {
 "menu_text":{'en': {'buster': 'Weekly Boredom Buster', 'news': 'Weekly News Letter', 'grades': 'Weekly Work', 'online': 'Remote Learning FAQ'}, 'es': {'buster': 'Reto Semanal Para no Aburrirse', 'news': 'Noticiero Semanal', 'grades': 'Trabajo de la Semana', 'online': 'Ayuda para Aprender de Casa'}},
 "news_letter":{
-	"en":"imgs/news_letters/en_news_0420-0424.pdf",
-	"es":"imgs/news_letters/es_news_0420-0424.pdf"
+	"en":"imgs/news_letters/en_news_0420-0424.png",
+	"es":"imgs/news_letters/es_news_0420-0424.png"
 }
 }
 
@@ -52,9 +52,13 @@ function setup_page(language){
 	if(text_files['news_letter'][language].includes('pdf'))
 	{
 		$('.pdf_news_letter').attr('src', text_files['news_letter'][language]);
+		$('.img_news_letter').attr('width','0%');
+		$('.img_news_letter').attr('height','0%');
 	}
 	else{
 		$('.img_news_letter').attr('src', text_files['news_letter'][language]);
+		$('.pdf_news_letter').attr('width','0%');
+		$('.pdf_news_letter').attr('height','0%');
 	}
 }
 
