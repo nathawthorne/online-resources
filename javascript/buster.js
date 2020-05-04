@@ -1,8 +1,8 @@
 var text_files = {
 "menu_text":{'en': {'buster': 'Weekly Boredom Buster', 'news': 'Weekly News Letter', 'grades': 'Weekly Work', 'online': 'Remote Learning FAQ'}, 'es': {'buster': 'Reto Semanal Para no Aburrirse', 'news': 'Noticiero Semanal', 'grades': 'Trabajo de la Semana', 'online': 'Ayuda para Aprender de Casa'}},
 "buster_images":{
-	"en":"imgs/busters/buster_en_0427-0501.png",
-	"es":"imgs/busters/buster_es_0427-0501.png"
+	"en":"imgs/busters/buster_en_502-508.pdf",
+	"es":"imgs/busters/buster_es_502-508.pdf"
 }
 }
 
@@ -47,7 +47,17 @@ function setup_page(language){
 		$('#counsel').html('Servicios de Consejeria');
 	}
 
-	$('.buster').attr('src', text_files['buster_images'][language]);
+	if(text_files['buster_images'][language].includes('pdf'))
+	{
+		$('.pdf_news_letter').attr('src', text_files['buster_images'][language]);
+		$('.img_news_letter').attr('width','0%');
+		$('.img_news_letter').attr('height','0%');
+	}
+	else{
+		$('.img_news_letter').attr('src', text_files['buster_images'][language]);
+		$('.pdf_news_letter').attr('width','0%');
+		$('.pdf_news_letter').attr('height','0%');
+	}
 }
 
 $(document).ready(function(){

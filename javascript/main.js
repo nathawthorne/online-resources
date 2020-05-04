@@ -1,7 +1,11 @@
 var text_files = {
 "important_info":{'en': {'title': 'Click here to begin your Pre-K Enrollment! We recommend to use your cellphone for the whole process.'}, 'es': {'title': 'Oprime aqui para inciar su inscripcion de Pre-K! Recomendamos que use su celular para todo el proceso.'}},
 "main_page":{'image': 'imgs/anfernandez.jpg', 'text': {'en': 'Hello Hawthorne Families,<br /><br /><br />As you all know, we are experiencing a new way to see education due to all the events that are happening around us. Every week, you will find the lessons that the Teachers will be sending home, they will also send them through Class Dojo. The lessons include digital and non-digital options! Your child does NOT need to complete both options, please choose the option that works best for your family! If you are unable to access activities, please contact the teacher. Teachers will be providing Zoom sessions to include virtual parent office hours and virtual daily sessions in order to answer questions and provide support. Please bear with us with as we embark on a new journey that includes distance and online learning.  <b>We are in this together!</b>', 'es': 'Hola Familias de Hawthorne,<br /><br /><br />Como ustedes saben, estamos implementando una nueva manera de dar clases debido a los eventos que estan sucediendo a nuestro alrededor. Cada semana, los maestros estar&#x00E1;n mandando a casa las lecciones y tambi&#x00E9;n las enviar&#x00E1;n por Class Dojo. Las lecciones incluyen actividades para la computadora y  otras que se pueden hacer sin tecnolog&#x00ED;a, no necesitan hacer las dos opciones, puede escoger lo que mejor funcione para ustedes. Si no puede accesar las actividades, por favor comun&#x00ED;quese con los maestros de su hijo(a). Los maestros estar&#x00E1;n ofreciendo apoyo a los padres para resolver dudas y preguntas por medio de sesiones virtuales por ZOOM y horas de oficina para que puedan hablarles por Class Dojo tambi&#x00E9;n.  Les pedimos que nos tengan paciencia en esta aventura que incluye el dar clases de lejos y aprendizaje por computadora. <b>Estamos en esta aventura juntos.</b>'}, 'links_title': {'en': 'Useful Resources', 'es': 'Recursos Utiles'}, 'food_bank_links': ['https://www.citysquare.org/food', 'https://www.ivcompassion.org/', 'https://goodstreetbaptistchurch.org/social-service-center-2/'], 'food_bank_links_text': ['City Square Food Pantry', 'Inspired Vision Compassion Center', 'Good Street Baptist Church'], 'food_bank_extra_info': {'en': ['Tuesday - Friday 9:00 am - 1 pm,<br />1610 S Malcolm X Blvd, Bldg 350, Dallas, TX 75226<br />(214) 823-8710', 'Monday - Friday 9:30 am - 5:00 pm,<br/>2019 N. Masters, Dallas, Texas 75217, <br/>P:(972) 971-8879', 'Monday, Tuesday, Friday 10:00 am - 12:00 pm,<br />Wednesday 12:00 pm - 2:00 pm,<br />Thursday 10:00 am - 2:00 pm,<br />3126 Hatcher Street, Dallas, TX 75215<br />(214) 421-8208'], 'es': ['Martes - Viernes 9:00 am - 1 pm,<br />1610 S Malcolm X Blvd, Bldg 350, Dallas, TX 75226<br />(214) 823-8710', 'Lunes - Viernes 9:30 am - 5:00 pm, <br/>2019 N. Masters, Dallas, Texas 75217, <br/>P:(972) 971-8879', 'Lunes, Martes, Viernes 10:00 am - 12:00 pm,<br /> Miercoles 12:00 pm - 2:00 pm,<br />Jueves 10:00 am - 2:00 pm,<br />3126 Hatcher Street, Dallas, TX 75215<br />(214) 421-8208']}, 'shelter_links': ['https://www.familygateway.org/', 'https://www.edenoutreach.com/contactus.htm', 'https://hccdallas.org/'], 'shelter_text': ['Family Gateway', 'Eden Outreach', 'Housing Crisis Center'], 'shelter_extra_info': ['711 S. St. Paul St. Dallas,TX 75201<br />(214) 823-4500', '3110 Metropolitan Ave, Dallas, Texas 75215<br />(214) 421-5894', '4210 Junius Street, Dallas, TX 75246<br />(214) 828-4244']},
-"menu_text":{'en': {'buster': 'Weekly Boredom Buster', 'news': 'Weekly News Letter', 'grades': 'Weekly Work', 'online': 'Remote Learning FAQ'}, 'es': {'buster': 'Reto Semanal Para no Aburrirse', 'news': 'Noticiero Semanal', 'grades': 'Trabajo de la Semana', 'online': 'Ayuda para Aprender de Casa'}}}
+"menu_text":{'en': {'buster': 'Weekly Boredom Buster', 'news': 'Weekly News Letter', 'grades': 'Weekly Work', 'online': 'Remote Learning FAQ'}, 'es': {'buster': 'Reto Semanal Para no Aburrirse', 'news': 'Noticiero Semanal', 'grades': 'Trabajo de la Semana', 'online': 'Ayuda para Aprender de Casa'}},
+"special_images": {
+	"es":"imgs/parade_es.png",
+	"en":"imgs/parade_en.png"
+}}
 
 
 
@@ -54,6 +58,19 @@ function setup_page(language){
 
 	// setting up main content
 	$('.main_image').html('<img src="'+text_files['main_page']['image']+'">');
+
+	if(text_files['special_images'][language].includes('png'))
+	{
+		$('.special_img').attr('src',text_files['special_images'][language]);
+		$('.special_img').attr('min-width','100%');
+		$('.special_img').attr('min-height','100%');
+		$('.special_img').attr('max-width','100%');
+		$('.special_img').attr('max-height','100%');
+	}
+	else{
+		$('.special_img').attr('width','0%');
+		$('.special_img').attr('height','0%');
+	}
 	$('.main_text').html('<p>'+text_files['main_page']['text'][language]+'</p>');
 
 	// setting up links
@@ -152,7 +169,7 @@ $(document).ready(function(){
         $('.nav').addClass('invisible');
     }, 100);
 	});
- 
+
 
 
 
