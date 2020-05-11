@@ -57,21 +57,21 @@ function setup_page(language){
 	}
 
 	// setting up main content
-	$('.main_image').html('<img src="'+text_files['main_page']['image']+'">');
-
-	if(text_files['special_images'][language].includes('png'))
-	{
-		$('.special_img').attr('src',text_files['special_images'][language]);
-		$('.special_img').attr('min-width','100%');
-		$('.special_img').attr('min-height','100%');
-		$('.special_img').attr('max-width','100%');
-		$('.special_img').attr('max-height','100%');
-	}
-	else{
-		$('.special_img').attr('width','0%');
-		$('.special_img').attr('height','0%');
-	}
-	$('.main_text').html('<p>'+text_files['main_page']['text'][language]+'</p>');
+	// $('.main_image').html('<img src="'+text_files['main_page']['image']+'">');
+	//
+	// if(text_files['special_images'][language].includes('png'))
+	// {
+	// 	$('.special_img').attr('src',text_files['special_images'][language]);
+	// 	$('.special_img').attr('min-width','100%');
+	// 	$('.special_img').attr('min-height','100%');
+	// 	$('.special_img').attr('max-width','100%');
+	// 	$('.special_img').attr('max-height','100%');
+	// }
+	// else{
+	// 	$('.special_img').attr('width','0%');
+	// 	$('.special_img').attr('height','0%');
+	// }
+	// $('.main_text').html('<p>'+text_files['main_page']['text'][language]+'</p>');
 
 	// setting up links
 	to_write = "<h4>"+text_files['main_page']['links_title'][language]+"</h4><ul>"
